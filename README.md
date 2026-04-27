@@ -121,7 +121,7 @@ make dev-backend    # starts FastAPI on http://localhost:8000
 cd frontend && npm run dev   # starts Vite on http://localhost:5173
 ```
 
-Open [http://localhost:5173](http://localhost:5173) and upload a CSV.
+Open `http://localhost:5173` in your browser and upload a CSV.
 
 ### 4 — Try the sample dataset
 
@@ -177,6 +177,14 @@ claude-analytics-dashboard/
     ├── showcase_data.csv     # sample dataset for demos
     └── generate_showcase.py  # reproducible generator (seed=42)
 ```
+
+---
+
+## Built With AI Assistance
+
+This project was built using [Claude Code](https://claude.ai/code) and the Claude Design System as AI pair-programming tools. Claude helped with architecture decisions, code generation, design system creation, and security review — while all product decisions, prompting strategy, and project direction were driven by me.
+
+This reflects how modern data professionals work: using AI as a force multiplier, not a replacement for domain expertise.
 
 ---
 
