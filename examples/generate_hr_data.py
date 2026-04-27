@@ -8,6 +8,7 @@ demographics, compensation, performance, attrition, engagement, recruitment.
 import random
 import csv
 from datetime import date, timedelta
+from pathlib import Path
 
 random.seed(42)
 
@@ -201,7 +202,7 @@ random.shuffle(rows)
 
 # ── Write CSV ────────────────────────────────────────────────────────────────
 
-output_path = "/Users/shushan/Desktop/claude-analytics-dashboard/examples/company_x_employees.csv"
+output_path = str(Path(__file__).parent / "company_x_employees.csv")
 fieldnames  = list(rows[0].keys())
 
 with open(output_path, "w", newline="") as f:
