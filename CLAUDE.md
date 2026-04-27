@@ -18,7 +18,7 @@ Project 1 and adapted for an HTTP/SSE context.
 | Data profiling | pandas, numpy (same DataProfiler as Project 1) |
 | AI | anthropic SDK — tool-use loop + `.stream()` for SSE |
 | Config | python-dotenv, Pydantic v2 |
-| Frontend | React 18, Vite, TypeScript |
+| Frontend | React 19, Vite, TypeScript |
 | Styling | Tailwind CSS |
 | Charts | Recharts |
 | Icons | Lucide React |
@@ -55,8 +55,10 @@ claude-analytics-dashboard/
         ├── types/index.ts
         ├── utils/api.ts
         ├── hooks/            — useFileUpload, useAnalysis, useChat
-        └── components/       — FileUpload, Dashboard, StatCards, ChartGrid,
-                                InsightsPanel, ChatInterface, ExportButton
+        └── components/       — Dashboard, ChartGrid, DynamicChartGrid,
+                                InsightCards, InsightsPanel, ChatInterface,
+                                FilterBar, ExportButton, DomainBadge,
+                                layout/LandingLayout
 ```
 
 ## Common Commands

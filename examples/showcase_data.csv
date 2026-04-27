@@ -1,0 +1,1001 @@
+employee_id,hire_date,department,job_level,gender,location,work_mode,annual_salary,training_hours_ytd,performance_rating,satisfaction_score,overtime_pct,is_churned
+EMP-0001,2025-08-03,Support,L1,Male,San Francisco,Hybrid,62870,40.2,3.2,6.4,21.9,0
+EMP-0002,2019-10-16,Marketing,L1,Female,Remote,Remote,58848,75.9,4.3,7.2,14.0,0
+EMP-0003,2024-03-11,Finance,L3,Female,Remote,Remote,91606,12.8,2.7,6.6,9.6,0
+EMP-0004,2022-02-03,Engineering,L1,Male,San Francisco,Hybrid,54708,39.5,4.5,6.0,8.9,1
+EMP-0005,2018-08-18,Sales,L5,Female,Austin,Hybrid,155010,52.6,3.3,6.7,15.3,0
+EMP-0006,2024-04-18,Marketing,L4,Female,New York,Remote,143322,4.5,3.1,7.6,39.2,0
+EMP-0007,2018-09-18,Engineering,L1,Female,Remote,Hybrid,62686,0,2.8,8.9,12.9,0
+EMP-0008,2020-12-14,Sales,L3,Male,Austin,Hybrid,98403,34.6,3.5,6.1,12.0,0
+EMP-0009,2023-06-25,Engineering,L5,Female,Remote,Hybrid,149920,84.7,3.8,6.8,22.3,0
+EMP-0010,2024-03-01,Finance,L5,Female,New York,Hybrid,150821,61.1,3.4,4.5,8.8,0
+EMP-0011,2020-07-09,HR,L3,Male,Austin,Remote,84098,31.5,3.3,8.5,16.9,0
+EMP-0012,2019-06-26,Finance,L1,Male,Chicago,Remote,63711,46.1,3.8,8.4,18.6,0
+EMP-0013,2021-10-21,Finance,L1,Female,Chicago,Remote,48580,53.8,3.7,6.5,18.0,0
+EMP-0014,2019-01-18,Finance,L2,Male,Remote,On-site,69745,29.8,3.3,8.0,14.8,0
+EMP-0015,2024-03-26,Finance,L2,Male,Remote,On-site,83688,55.4,3.7,5.2,7.2,1
+EMP-0016,2018-11-25,Support,L2,Female,New York,On-site,68089,84.8,3.8,8.4,17.3,1
+EMP-0017,2025-07-06,Engineering,L3,Female,San Francisco,Remote,114055,66.6,4.1,9.7,43.1,0
+EMP-0018,2018-10-09,Engineering,L2,Female,New York,Remote,76091,62.2,2.5,8.7,44.1,0
+EMP-0019,2024-03-16,Support,L5,Male,New York,Remote,150187,17.3,3.3,6.0,16.2,0
+EMP-0020,2019-06-20,Finance,L1,Male,San Francisco,Remote,53583,12.9,3.4,9.3,24.5,1
+EMP-0021,2022-02-02,Engineering,L2,Female,Austin,Remote,72163,45.0,3.6,7.8,6.6,0
+EMP-0022,2018-04-12,HR,L4,Non-binary,Remote,On-site,119754,19.9,4.9,8.4,1.0,0
+EMP-0023,2023-03-01,Engineering,L4,Female,San Francisco,On-site,141456,45.7,3.8,5.4,26.1,0
+EMP-0024,2019-04-18,Support,L2,Non-binary,Austin,On-site,70559,61.8,3.2,4.6,28.5,0
+EMP-0025,2018-01-07,Marketing,L2,Female,San Francisco,Hybrid,79036,10.9,3.1,6.1,5.3,0
+EMP-0026,2021-06-20,Sales,L2,Female,Chicago,Remote,83852,29.9,3.6,2.3,33.4,0
+EMP-0027,2022-10-27,Support,L2,Female,New York,Remote,81004,34.6,3.9,4.2,20.8,0
+EMP-0028,2020-08-20,Support,L2,Female,Chicago,Remote,84046,49.3,3.0,8.6,20.6,0
+EMP-0029,2019-08-28,HR,L2,Female,San Francisco,Remote,83497,79.1,2.6,6.9,6.5,0
+EMP-0030,2023-03-19,Marketing,L2,Female,New York,Remote,83875,27.1,3.1,4.3,17.2,0
+EMP-0031,2020-10-09,HR,L2,Male,Remote,Hybrid,82894,49.4,2.6,4.6,16.7,0
+EMP-0032,2020-05-26,HR,L1,Male,San Francisco,Remote,47104,33.0,3.7,7.4,5.1,0
+EMP-0033,2021-05-08,Engineering,L4,Female,Austin,On-site,151634,13.1,4.2,5.9,8.6,0
+EMP-0034,2023-03-30,Engineering,L2,Female,San Francisco,Remote,75981,69.6,2.9,8.0,16.3,0
+EMP-0035,2021-02-13,Sales,L2,Male,San Francisco,On-site,75813,48.8,3.4,6.5,22.0,0
+EMP-0036,2019-09-17,Support,L3,Non-binary,New York,Remote,89816,31.3,2.8,6.0,5.8,0
+EMP-0037,2018-04-16,Support,L1,Female,Remote,Remote,55222,62.9,2.8,7.3,34.7,0
+EMP-0038,2024-05-07,Support,L2,Female,Remote,On-site,63345,25.9,3.6,5.2,38.4,1
+EMP-0039,2023-11-08,HR,L3,Female,Chicago,Hybrid,103314,54.8,2.8,4.6,17.1,0
+EMP-0040,2024-11-04,Finance,L1,Female,San Francisco,Hybrid,57418,25.5,3.1,6.0,16.9,0
+EMP-0041,2022-07-23,HR,L2,Female,New York,Remote,78009,46.5,4.0,6.5,12.5,0
+EMP-0042,2024-03-04,Sales,L3,Male,Austin,Remote,92839,27.0,3.6,5.0,13.4,0
+EMP-0043,2023-11-19,Support,L1,Female,San Francisco,Hybrid,64555,56.7,3.3,6.8,23.5,0
+EMP-0044,2023-07-04,HR,L2,Female,New York,On-site,65361,22.9,3.0,6.9,14.4,0
+EMP-0045,2019-09-04,Finance,L2,Male,Chicago,Remote,80443,59.3,3.5,5.1,17.4,0
+EMP-0046,2024-05-18,Sales,L4,Male,Austin,Hybrid,111947,41.7,2.2,5.7,36.3,1
+EMP-0047,2020-08-06,Engineering,L1,Male,Austin,Remote,61010,12.8,3.4,7.2,1.1,0
+EMP-0048,2018-10-20,Marketing,L2,Female,Remote,On-site,63954,32.0,4.2,6.5,16.0,0
+EMP-0049,2022-11-05,HR,L2,Female,New York,Remote,72561,60.7,3.4,7.9,3.8,0
+EMP-0050,2022-12-17,Finance,L2,Female,New York,Hybrid,71114,18.2,2.9,7.8,16.0,0
+EMP-0051,2024-03-03,Finance,L2,Female,San Francisco,On-site,63202,37.3,3.8,5.3,17.4,0
+EMP-0052,2025-01-05,Marketing,L2,Male,San Francisco,Hybrid,76484,53.0,4.0,4.7,16.7,0
+EMP-0053,2019-01-17,Support,L1,Male,Austin,Hybrid,52362,65.9,2.8,7.5,11.8,0
+EMP-0054,2022-04-21,Sales,L4,Non-binary,San Francisco,Hybrid,120491,0,3.6,4.8,39.4,0
+EMP-0055,2025-05-27,Marketing,L4,Male,San Francisco,Hybrid,140089,21.1,3.9,6.8,4.2,0
+EMP-0056,2021-07-27,HR,L1,Male,Remote,Hybrid,60498,53.2,2.6,8.4,0,1
+EMP-0057,2023-11-25,Marketing,L3,Female,Remote,Hybrid,96972,,4.2,8.9,24.4,0
+EMP-0058,2021-07-21,Sales,L1,Male,Chicago,Hybrid,60989,62.4,3.3,5.3,45,0
+EMP-0059,2018-04-29,Engineering,L3,Female,Austin,Hybrid,90391,8.8,3.1,7.9,1.7,0
+EMP-0060,2020-08-09,Support,L2,Female,Austin,Hybrid,77110,62.5,2.4,7.2,14.0,1
+EMP-0061,2023-02-15,HR,L5,Male,Remote,Hybrid,159799,48.9,3.4,7.8,2.6,0
+EMP-0062,2018-07-20,HR,L3,Male,Austin,Hybrid,101870,32.4,4.1,4.1,13.8,0
+EMP-0063,2019-02-02,Sales,L3,Female,Chicago,Remote,102560,84.3,3.3,6.6,21.5,0
+EMP-0064,2021-01-21,Engineering,L1,Female,Remote,Hybrid,54205,35.5,2.0,7.0,9.9,1
+EMP-0065,2024-04-01,HR,L4,Female,Remote,On-site,131971,54.2,3.3,7.4,3.0,0
+EMP-0066,2024-04-18,Support,L2,Female,Austin,Hybrid,72748,71.9,3.3,7.2,29.1,1
+EMP-0067,2019-07-10,HR,L2,Female,New York,On-site,74735,34.9,2.8,4.7,0.5,0
+EMP-0068,2022-02-26,Engineering,L2,Male,Remote,Remote,75639,62.6,3.5,6.2,0,0
+EMP-0069,2025-03-13,Engineering,L1,Female,Austin,Hybrid,74065,28.3,2.2,10.0,16.2,0
+EMP-0070,2021-02-09,Finance,L1,Female,Remote,Hybrid,49741,84.8,2.1,6.1,14.8,0
+EMP-0071,2019-04-11,Support,L1,Male,New York,Hybrid,47082,36.3,3.2,5.0,0,0
+EMP-0072,2023-05-16,Finance,L2,Male,Remote,Remote,75160,43.7,4.0,8.1,17.7,1
+EMP-0073,2021-04-22,Support,L3,Female,San Francisco,Hybrid,96867,33.5,2.5,7.8,10.4,0
+EMP-0074,2019-01-25,Marketing,L4,Male,Remote,Remote,128483,7.7,3.4,5.5,14.6,0
+EMP-0075,2024-04-19,Engineering,L3,Female,Austin,Hybrid,108735,41.2,3.0,8.3,20.6,0
+EMP-0076,2019-03-20,Sales,L2,Male,Chicago,Remote,73472,19.1,2.6,7.0,28.8,0
+EMP-0077,2020-12-31,Support,L3,Male,Remote,On-site,82948,5.2,3.3,5.5,42.2,0
+EMP-0078,2022-09-16,Engineering,L3,Male,Chicago,Remote,105010,46.7,3.3,4.3,14.3,0
+EMP-0079,2021-01-23,Support,L1,Female,Austin,Hybrid,52063,48.7,3.6,7.7,17.0,1
+EMP-0080,2019-07-17,Sales,L3,Male,San Francisco,Remote,107040,22.1,3.5,5.4,26.4,0
+EMP-0081,2018-03-18,Finance,L4,Male,Remote,Remote,138130,64.2,4.2,5.3,9.9,1
+EMP-0082,2018-12-27,Sales,L4,Female,Remote,On-site,136620,22.9,3.7,7.1,15.2,0
+EMP-0083,2021-12-02,Engineering,L2,Male,Austin,On-site,82525,56.5,3.5,5.8,15.5,0
+EMP-0084,2023-01-13,Engineering,L3,Female,Remote,Hybrid,119175,73.3,2.9,5.2,8.8,0
+EMP-0085,2023-01-26,Sales,L1,Male,Austin,Remote,46232,36.0,3.2,4.7,30.5,0
+EMP-0086,2025-04-23,Marketing,L3,Female,Austin,On-site,88168,21.0,3.2,6.8,25.6,0
+EMP-0087,2023-11-12,Marketing,L1,Male,Austin,Hybrid,64982,73.5,2.8,7.5,6.3,0
+EMP-0088,2025-05-13,Engineering,L1,Female,San Francisco,Hybrid,73640,70.2,2.8,6.3,24.1,0
+EMP-0089,2025-07-07,HR,L2,Male,Remote,On-site,84459,38.1,4.0,7.9,18.8,0
+EMP-0090,2019-02-19,Finance,L1,Non-binary,New York,Remote,61635,47.2,3.7,4.2,4.9,0
+EMP-0091,2022-11-28,Engineering,L4,Female,Remote,Remote,120961,77.1,3.8,8.2,11.9,0
+EMP-0092,2022-12-10,Finance,L2,Female,San Francisco,On-site,77128,21.0,3.4,5.1,14.8,0
+EMP-0093,2023-10-15,Engineering,L2,Male,Remote,Hybrid,71273,57.5,3.1,9.7,0,0
+EMP-0094,2018-12-01,Sales,L1,Male,Austin,Remote,57285,65.4,3.0,5.8,19.1,0
+EMP-0095,2018-11-21,Marketing,L4,Female,Austin,Hybrid,109245,55.6,4.1,5.2,8.2,0
+EMP-0096,2023-08-10,Engineering,L2,Female,Austin,Remote,90002,43.1,2.4,5.7,19.5,0
+EMP-0097,2023-09-11,Support,L2,Male,Remote,Hybrid,80158,,3.3,8.0,24.7,0
+EMP-0098,2024-07-11,Sales,L1,Male,Chicago,Remote,55895,33.0,3.5,6.2,8.7,0
+EMP-0099,2020-04-05,Engineering,L1,Female,Remote,Remote,52430,37.4,3.6,7.3,3.7,0
+EMP-0100,2022-02-16,Sales,L4,Male,Chicago,Remote,136636,43.0,2.4,6.8,20.1,0
+EMP-0101,2020-01-10,Marketing,L4,Female,New York,Hybrid,143748,60.7,4.0,4.6,16.2,0
+EMP-0102,2025-03-04,Marketing,L3,Female,Chicago,Hybrid,107935,72.9,3.9,7.4,0.5,1
+EMP-0103,2022-02-09,Support,L3,Male,New York,Hybrid,93866,17.6,3.2,8.0,19.0,0
+EMP-0104,2020-02-02,Marketing,L2,Female,San Francisco,Remote,78352,54.4,3.1,6.4,6.7,0
+EMP-0105,2025-12-31,HR,L1,Male,New York,Remote,59585,66.4,1.6,5.6,1.1,0
+EMP-0106,2022-01-20,Sales,L1,Female,Chicago,Remote,61670,83.8,3.0,3.9,22.4,0
+EMP-0107,2023-05-15,HR,L1,Female,New York,Remote,62225,20.8,3.5,6.5,14.9,0
+EMP-0108,2019-06-13,Engineering,L4,Female,Austin,Hybrid,150026,58.0,3.1,8.4,27.9,0
+EMP-0109,2021-01-29,Marketing,L2,Male,New York,On-site,66101,37.7,3.1,5.2,6.2,0
+EMP-0110,2018-11-29,HR,L2,Female,New York,On-site,63489,47.3,2.8,5.0,7.1,0
+EMP-0111,2022-07-22,Marketing,L3,Male,San Francisco,On-site,91746,40.1,3.2,5.5,13.6,0
+EMP-0112,2023-10-11,Sales,L5,Male,San Francisco,Hybrid,176808,45.6,4.2,5.5,24.5,0
+EMP-0113,2021-07-04,Sales,L5,Female,Remote,On-site,152440,18.5,3.9,5.1,24.0,0
+EMP-0114,2025-05-03,HR,L1,Male,New York,Hybrid,60420,55.5,3.1,6.6,19.6,1
+EMP-0115,2023-01-19,Engineering,L2,Male,San Francisco,Remote,86256,40.3,3.0,4.7,20.8,0
+EMP-0116,2019-07-16,Finance,L1,Female,Austin,Remote,55913,32.6,3.1,8.8,26.3,0
+EMP-0117,2023-06-30,Support,L4,Female,Austin,Hybrid,144891,53.5,3.2,8.5,20.3,0
+EMP-0118,2024-06-27,Support,L1,Male,Remote,On-site,63927,68.9,3.3,6.3,5.0,0
+EMP-0119,2022-09-12,Sales,L2,Female,New York,Hybrid,66962,52.4,4.0,2.5,25.4,0
+EMP-0120,2019-12-11,Marketing,L2,Non-binary,Austin,Remote,77062,33.7,3.8,6.3,0.7,0
+EMP-0121,2021-05-04,Engineering,L1,Female,San Francisco,On-site,61033,19.9,3.1,8.8,6.9,0
+EMP-0122,2019-08-23,Marketing,L4,Male,San Francisco,Hybrid,127035,53.6,3.6,5.4,1.0,0
+EMP-0123,2020-09-07,Sales,L2,Male,New York,Hybrid,69944,58.0,3.1,6.2,27.3,0
+EMP-0124,2023-05-03,Engineering,L5,Non-binary,New York,Hybrid,190997,40.8,4.4,6.9,0.5,0
+EMP-0125,2018-05-29,Finance,L1,Female,San Francisco,On-site,58008,59.3,4.0,6.6,14.1,0
+EMP-0126,2019-07-04,HR,L2,Male,Chicago,Hybrid,78522,48.8,3.6,5.7,13.6,0
+EMP-0127,2022-07-19,Finance,L2,Female,New York,On-site,76014,73.0,3.8,7.5,17.5,0
+EMP-0128,2018-02-16,Sales,L3,Non-binary,San Francisco,Hybrid,90570,42.2,3.3,4.7,31.6,0
+EMP-0129,2024-11-22,Support,L2,Male,Remote,Remote,69236,53.5,3.6,5.6,15.6,0
+EMP-0130,2018-12-02,Marketing,L3,Male,San Francisco,Hybrid,99219,42.5,3.3,8.3,15.8,0
+EMP-0131,2024-07-16,Engineering,L2,Female,New York,Remote,82627,53.7,2.7,6.2,12.7,0
+EMP-0132,2018-07-05,Support,L2,Female,Chicago,Hybrid,75883,109.9,4.1,9.7,31.8,0
+EMP-0133,2022-04-16,Finance,L3,Non-binary,Chicago,Hybrid,96697,62.8,3.2,5.8,3.5,0
+EMP-0134,2018-01-15,Engineering,L2,Female,Chicago,Remote,72020,40.5,2.7,6.9,20.8,0
+EMP-0135,2018-03-06,Finance,L3,Male,Chicago,Hybrid,89886,49.6,3.6,6.6,9.6,0
+EMP-0136,2021-03-30,Sales,L1,Female,New York,Hybrid,52673,42.8,2.6,4.6,14.2,1
+EMP-0137,2019-12-19,Support,L1,Male,New York,On-site,58998,64.3,3.3,5.4,30.3,0
+EMP-0138,2025-12-08,Sales,L1,Female,San Francisco,Remote,49730,69.3,2.7,4.5,20.1,1
+EMP-0139,2020-02-20,Support,L4,Female,New York,Hybrid,111377,31.2,3.0,7.6,37.7,0
+EMP-0140,2020-02-18,Marketing,L4,Male,Remote,Remote,115688,46.3,2.4,6.3,4.3,0
+EMP-0141,2023-07-30,Sales,L2,Female,San Francisco,Remote,77270,69.6,3.2,6.4,17.1,0
+EMP-0142,2022-09-07,Sales,L1,Male,Remote,Hybrid,54672,34.7,3.6,3.2,22.1,1
+EMP-0143,2021-12-13,Finance,L5,Female,Austin,Remote,151092,31.6,3.8,10.0,10.8,0
+EMP-0144,2025-01-27,Engineering,L4,Male,New York,Remote,130162,49.7,4.3,4.6,0,0
+EMP-0145,2024-01-04,Engineering,L2,Male,New York,Hybrid,75086,26.7,2.3,7.2,14.2,0
+EMP-0146,2022-07-22,Marketing,L4,Male,San Francisco,Remote,138080,60.7,3.7,7.9,2.5,0
+EMP-0147,2019-12-03,Engineering,L2,Female,New York,Remote,71178,51.1,2.5,8.1,17.5,0
+EMP-0148,2021-02-22,Finance,L4,Male,New York,Remote,143588,94.5,4.0,8.5,9.4,0
+EMP-0149,2022-05-13,Sales,L1,Male,San Francisco,On-site,62713,45.4,2.8,4.9,10.4,1
+EMP-0150,2022-06-13,Marketing,L4,Male,Remote,On-site,129389,,3.4,10.0,0.3,0
+EMP-0151,2018-12-03,Support,L1,Female,Remote,Hybrid,53780,86.2,2.9,4.8,41.5,0
+EMP-0152,2022-07-30,Sales,L1,Male,Austin,Hybrid,48384,,3.4,6.8,29.5,0
+EMP-0153,2020-09-21,Sales,L2,Male,Remote,On-site,80741,39.7,3.0,5.1,27.6,0
+EMP-0154,2023-07-24,Sales,L3,Male,Remote,Hybrid,101457,33.5,3.6,,6.8,0
+EMP-0155,2021-05-15,Marketing,L2,Female,Chicago,Hybrid,72507,70.7,3.1,5.2,6.4,0
+EMP-0156,2022-02-04,HR,L3,Male,San Francisco,On-site,85731,56.5,4.1,10.0,12.2,0
+EMP-0157,2022-08-03,Engineering,L3,Female,New York,On-site,114449,39.9,3.5,8.8,12.8,0
+EMP-0158,2022-01-12,Sales,L2,Female,Chicago,Hybrid,84991,36.6,2.5,4.7,23.7,0
+EMP-0159,2022-10-30,Engineering,L5,Female,San Francisco,Hybrid,154445,13.0,3.2,6.6,4.3,0
+EMP-0160,2022-08-31,Support,L2,Male,New York,Remote,64813,34.1,3.6,6.4,15.5,0
+EMP-0161,2019-04-17,Marketing,L3,Male,San Francisco,On-site,82740,49.1,3.0,5.0,18.0,0
+EMP-0162,2025-03-08,Marketing,L5,Male,San Francisco,Remote,168320,43.3,3.8,3.8,11.3,0
+EMP-0163,2022-02-07,Support,L3,Female,Remote,Hybrid,92681,45.9,4.2,8.1,30.5,0
+EMP-0164,2021-05-03,Engineering,L2,Male,New York,Hybrid,91089,40.9,3.1,7.7,8.9,0
+EMP-0165,2019-12-11,Support,L2,Female,Austin,On-site,80183,53.7,3.2,7.6,7.3,0
+EMP-0166,2023-07-08,Engineering,L2,Female,Chicago,Hybrid,84769,15.0,3.7,8.3,12.4,0
+EMP-0167,2024-06-03,Finance,L2,Female,Austin,Hybrid,65742,50.6,1.5,5.6,12.6,0
+EMP-0168,2018-05-13,Marketing,L3,Female,San Francisco,On-site,96736,7.9,3.7,6.2,22.8,0
+EMP-0169,2020-04-26,Support,L4,Female,Austin,Hybrid,121562,72.0,3.0,6.0,35.6,0
+EMP-0170,2022-08-13,HR,L2,Female,Remote,Remote,63942,98.3,3.5,6.2,12.0,0
+EMP-0171,2023-01-26,Support,L2,Female,San Francisco,Hybrid,64474,79.7,3.5,6.3,17.9,0
+EMP-0172,2023-02-21,Sales,L1,Female,Chicago,Hybrid,56738,95.8,3.3,3.8,27.3,1
+EMP-0173,2018-07-18,Marketing,L1,Female,Remote,On-site,46505,22.1,3.2,5.2,44.8,0
+EMP-0174,2021-01-27,Support,L1,Female,New York,On-site,48058,26.5,3.1,8.1,27.1,0
+EMP-0175,2019-06-28,Sales,L3,Female,New York,Hybrid,101453,64.1,3.5,5.0,34.2,1
+EMP-0176,2021-05-10,Engineering,L2,Female,New York,Remote,72362,0,3.9,5.3,21.4,0
+EMP-0177,2022-12-18,Sales,L1,Female,Remote,Hybrid,52118,56.8,3.9,6.6,2.8,1
+EMP-0178,2025-09-29,Sales,L1,Female,Chicago,Hybrid,45878,82.7,2.8,4.2,5.4,1
+EMP-0179,2024-08-29,HR,L5,Female,New York,Hybrid,144653,42.8,5.0,6.1,22.7,0
+EMP-0180,2018-10-04,Support,L3,Non-binary,Remote,Remote,82451,77.2,3.7,6.8,7.9,0
+EMP-0181,2021-06-23,Support,L1,Female,Chicago,Remote,47589,43.7,3.4,9.1,11.0,0
+EMP-0182,2018-12-20,Engineering,L3,Female,Remote,Remote,102165,64.8,4.3,7.4,12.6,1
+EMP-0183,2022-03-04,Marketing,L2,Female,Remote,Remote,66159,48.1,4.0,5.1,17.8,0
+EMP-0184,2018-08-16,Sales,L5,Female,Austin,Hybrid,172742,33.3,4.1,5.9,33.8,0
+EMP-0185,2019-09-07,Engineering,L4,Male,New York,Remote,136862,24.7,2.4,5.7,5.8,0
+EMP-0186,2020-01-05,Sales,L1,Male,Austin,On-site,52313,54.4,4.6,4.8,14.1,0
+EMP-0187,2024-12-25,Marketing,L1,Male,Austin,Remote,52948,48.9,2.5,5.8,17.8,0
+EMP-0188,2018-02-09,Engineering,L2,Male,San Francisco,On-site,76636,89.5,3.9,4.9,6.2,1
+EMP-0189,2023-10-30,HR,L3,Male,Remote,On-site,95535,42.0,2.4,9.4,15.5,1
+EMP-0190,2021-07-14,Marketing,L2,Non-binary,San Francisco,Remote,74876,51.7,3.3,5.5,16.8,0
+EMP-0191,2020-04-30,Engineering,L1,Male,San Francisco,Hybrid,64642,51.7,3.4,7.3,17.7,0
+EMP-0192,2025-08-05,Sales,L1,Male,San Francisco,Hybrid,54792,14.8,3.3,5.2,6.1,0
+EMP-0193,2019-06-20,Finance,L1,Male,Remote,On-site,51492,55.8,2.5,8.1,6.6,1
+EMP-0194,2021-09-20,Engineering,L4,Male,New York,On-site,122325,36.6,4.1,8.3,10.5,0
+EMP-0195,2024-12-11,Engineering,L1,Male,Remote,Remote,59139,48.3,3.6,5.6,5.8,0
+EMP-0196,2025-12-31,Sales,L5,Female,New York,Remote,163534,60.4,4.0,3.9,18.5,0
+EMP-0197,2022-01-04,Engineering,L4,Male,Remote,Hybrid,141421,60.7,3.4,5.8,14.4,0
+EMP-0198,2019-12-23,Finance,L3,Male,Remote,On-site,89751,41.3,3.8,4.7,24.2,0
+EMP-0199,2021-06-19,Marketing,L1,Non-binary,Remote,Hybrid,50752,51.0,3.5,7.2,11.7,0
+EMP-0200,2018-03-31,Engineering,L3,Female,Remote,Remote,96276,44.9,3.7,4.0,19.5,0
+EMP-0201,2025-03-03,Engineering,L2,Male,New York,On-site,86923,39.8,4.2,6.3,13.3,0
+EMP-0202,2024-06-04,Sales,L3,Male,Chicago,On-site,94831,29.8,3.6,3.4,14.4,0
+EMP-0203,2021-08-01,Engineering,L2,Male,New York,Remote,75170,81.4,3.7,4.8,11.4,0
+EMP-0204,2022-09-15,Sales,L3,Female,New York,Hybrid,87450,47.9,2.9,5.3,31.2,0
+EMP-0205,2021-07-29,Support,L1,Male,Remote,Remote,53556,60.0,3.4,7.1,20.6,1
+EMP-0206,2019-11-07,Support,L3,Female,New York,On-site,101900,17.5,3.7,7.2,27.7,0
+EMP-0207,2023-07-04,Sales,L2,Male,New York,Hybrid,67032,76.6,3.6,5.2,13.9,1
+EMP-0208,2023-04-13,Support,L5,Male,New York,On-site,172053,27.2,3.8,8.7,15.2,1
+EMP-0209,2025-10-23,Marketing,L1,Female,Austin,Remote,48168,60.6,2.7,8.2,3.4,0
+EMP-0210,2023-05-05,Sales,L2,Female,Austin,On-site,71792,30.1,4.1,3.9,36.6,0
+EMP-0211,2020-02-29,Engineering,L3,Male,Remote,On-site,90808,21.9,3.3,5.8,18.4,0
+EMP-0212,2023-10-30,Finance,L1,Female,Austin,On-site,60012,68.7,4.0,6.9,12.8,0
+EMP-0213,2021-03-17,Support,L5,Male,New York,Hybrid,175103,34.5,4.2,5.9,11.8,0
+EMP-0214,2025-09-29,Support,L3,Male,San Francisco,On-site,89784,34.1,3.0,6.9,12.7,0
+EMP-0215,2022-12-20,Finance,L3,Non-binary,San Francisco,Remote,107363,78.3,3.4,8.1,14.1,0
+EMP-0216,2021-06-28,Finance,L4,Female,Austin,Remote,141213,59.0,3.8,5.0,19.5,1
+EMP-0217,2023-03-17,Engineering,L1,Male,New York,Remote,67071,84.8,2.9,5.8,0,0
+EMP-0218,2018-04-23,Sales,L4,Male,Remote,Remote,133333,63.6,4.3,3.3,23.3,0
+EMP-0219,2019-06-26,Marketing,L4,Non-binary,Chicago,Hybrid,119350,60.5,4.2,6.8,4.9,0
+EMP-0220,2024-12-29,Sales,L2,Male,Austin,Hybrid,75013,99.0,5.0,5.4,28.8,0
+EMP-0221,2021-02-08,Support,L2,Male,San Francisco,Remote,70557,21.1,4.1,6.1,14.6,0
+EMP-0222,2023-07-31,Finance,L2,Male,New York,Remote,71686,43.2,2.8,7.4,9.3,0
+EMP-0223,2023-09-09,Sales,L2,Female,Remote,Hybrid,71836,17.3,4.0,2.8,26.3,0
+EMP-0224,2021-12-26,Finance,L1,Female,San Francisco,Remote,52318,51.6,2.7,9.0,11.6,0
+EMP-0225,2023-08-12,Finance,L3,Non-binary,New York,On-site,85926,63.3,3.1,7.5,14.6,0
+EMP-0226,2018-11-28,Marketing,L4,Male,San Francisco,Hybrid,139954,35.5,4.2,6.6,6.8,0
+EMP-0227,2022-10-25,Engineering,L3,Female,New York,Hybrid,104063,49.5,4.2,6.8,28.1,0
+EMP-0228,2021-07-02,Engineering,L1,Female,San Francisco,On-site,52190,30.7,3.0,7.2,20.4,0
+EMP-0229,2020-02-11,Marketing,L3,Male,Remote,Hybrid,87402,37.3,4.0,6.0,11.4,0
+EMP-0230,2020-11-13,Engineering,L2,Female,New York,On-site,88453,33.5,3.6,6.9,15.8,1
+EMP-0231,2022-09-20,Sales,L3,Male,Chicago,Remote,103681,48.3,2.7,5.0,3.3,0
+EMP-0232,2023-11-13,Sales,L3,Female,Chicago,Hybrid,88608,68.0,3.2,5.6,34.9,1
+EMP-0233,2019-01-04,Engineering,L1,Male,Austin,Hybrid,65318,27.1,3.8,5.6,18.2,0
+EMP-0234,2019-04-20,Finance,L4,Male,Chicago,Hybrid,114225,42.5,3.8,6.6,7.7,0
+EMP-0235,2022-06-28,Sales,L3,Male,San Francisco,Remote,96959,29.3,2.6,7.0,11.4,0
+EMP-0236,2024-05-19,Engineering,L5,Male,San Francisco,Hybrid,180208,13.4,3.8,7.0,23.4,0
+EMP-0237,2025-11-25,Engineering,L2,Male,San Francisco,Remote,92844,0,3.2,5.7,18.8,0
+EMP-0238,2019-09-01,Marketing,L3,Female,Chicago,Hybrid,109493,26.0,4.1,,5.1,0
+EMP-0239,2021-09-17,Marketing,L2,Male,Remote,Remote,71114,50.4,4.1,6.8,20.8,0
+EMP-0240,2019-02-25,Finance,L2,Male,Austin,Hybrid,75219,44.6,3.3,5.2,5.2,0
+EMP-0241,2020-07-02,Engineering,L3,Non-binary,San Francisco,Remote,120133,26.8,3.0,6.6,8.2,0
+EMP-0242,2025-11-15,Sales,L4,Non-binary,San Francisco,Hybrid,114967,51.2,4.0,5.1,17.3,1
+EMP-0243,2019-03-18,HR,L2,Male,Remote,Hybrid,75581,23.0,2.6,7.9,6.4,0
+EMP-0244,2024-07-24,HR,L1,Female,Austin,Hybrid,60824,54.4,1.8,7.9,25.0,0
+EMP-0245,2025-10-07,Support,L2,Female,San Francisco,Hybrid,70134,101.9,2.9,7.7,29.7,0
+EMP-0246,2025-02-04,Sales,L3,Female,Chicago,On-site,89121,32.0,3.2,3.3,0,0
+EMP-0247,2023-05-22,Marketing,L3,Male,New York,Remote,101097,33.6,3.0,7.3,6.5,0
+EMP-0248,2019-10-22,Marketing,L1,Male,Chicago,Remote,54391,49.8,3.3,7.2,21.6,0
+EMP-0249,2022-05-12,Support,L3,Female,San Francisco,Hybrid,89785,54.8,2.6,8.0,24.9,0
+EMP-0250,2022-12-20,Support,L5,Male,Chicago,Remote,154781,36.1,3.1,4.9,18.1,0
+EMP-0251,2023-10-06,Sales,L1,Female,New York,Remote,48910,19.7,3.4,4.3,18.1,0
+EMP-0252,2024-11-26,Engineering,L1,Male,New York,On-site,60302,20.8,3.9,6.9,17.0,0
+EMP-0253,2021-09-21,Sales,L2,Male,San Francisco,Remote,72848,52.2,4.3,7.8,21.6,1
+EMP-0254,2018-06-13,Support,L2,Female,Chicago,Hybrid,84365,16.2,4.0,6.6,38.0,0
+EMP-0255,2025-04-22,Finance,L2,Female,Austin,Remote,68308,53.6,3.4,7.0,2.2,0
+EMP-0256,2025-11-18,Support,L1,Female,Remote,Remote,59261,78.9,2.7,5.5,24.3,1
+EMP-0257,2022-05-09,Finance,L2,Female,San Francisco,Remote,76782,41.3,3.3,4.7,9.5,0
+EMP-0258,2025-09-10,Support,L3,Male,Remote,Remote,91874,35.1,4.8,6.9,19.8,0
+EMP-0259,2021-05-05,Support,L3,Female,San Francisco,Hybrid,104193,88.2,3.2,6.9,21.6,1
+EMP-0260,2020-05-10,Engineering,L2,Male,Austin,Remote,78481,52.3,3.0,5.9,7.9,0
+EMP-0261,2025-03-25,Marketing,L1,Female,Remote,Hybrid,63011,37.1,2.7,3.7,2.5,0
+EMP-0262,2021-09-06,Sales,L2,Male,New York,Hybrid,82196,40.6,3.0,6.5,0,0
+EMP-0263,2025-08-15,Finance,L3,Female,San Francisco,Remote,106018,21.3,3.6,6.0,12.3,1
+EMP-0264,2025-01-10,Sales,L4,Female,New York,Hybrid,113011,78.4,3.0,5.9,9.9,0
+EMP-0265,2019-09-01,Engineering,L1,Female,Austin,Hybrid,62073,8.3,2.5,6.1,12.0,1
+EMP-0266,2019-07-29,Sales,L5,Non-binary,Chicago,Hybrid,169243,19.0,3.6,6.6,34.9,1
+EMP-0267,2023-10-23,Finance,L1,Male,San Francisco,Hybrid,56837,84.5,2.5,6.3,9.0,0
+EMP-0268,2022-03-31,Sales,L3,Female,Austin,Remote,93970,52.1,3.4,6.2,20.8,0
+EMP-0269,2022-12-07,Sales,L3,Female,New York,On-site,87426,27.2,3.5,6.2,33.3,0
+EMP-0270,2024-08-16,Sales,L2,Male,Chicago,Hybrid,67283,31.1,3.5,4.6,19.1,0
+EMP-0271,2024-04-27,Engineering,L1,Female,Austin,Hybrid,51897,68.1,1.8,5.5,6.4,0
+EMP-0272,2023-09-24,Sales,L1,Female,Remote,Hybrid,53667,25.4,1.9,6.4,26.1,1
+EMP-0273,2019-12-28,Marketing,L4,Female,Remote,Hybrid,139186,8.5,3.0,6.7,8.5,0
+EMP-0274,2022-09-20,Marketing,L1,Female,Chicago,Hybrid,57136,37.5,2.5,4.3,13.5,0
+EMP-0275,2020-08-10,HR,L4,Female,Austin,Remote,113493,61.1,3.3,6.1,0,0
+EMP-0276,2019-09-26,Engineering,L3,Female,San Francisco,Remote,107011,59.2,3.0,6.4,23.9,0
+EMP-0277,2021-06-10,Finance,L2,Male,Austin,Remote,80928,35.1,2.4,5.4,0.8,0
+EMP-0278,2025-10-26,Engineering,L1,Male,San Francisco,Hybrid,49790,54.6,3.1,8.0,8.2,0
+EMP-0279,2023-11-05,Engineering,L1,Male,Remote,Hybrid,60976,83.4,2.7,5.8,14.0,0
+EMP-0280,2019-11-26,Sales,L1,Female,Austin,Remote,46181,11.3,1.7,5.0,32.0,0
+EMP-0281,2024-04-09,Engineering,L1,Female,Remote,Hybrid,69537,40.0,3.9,8.4,7.5,0
+EMP-0282,2020-11-21,Engineering,L1,Male,Remote,On-site,70849,25.3,1.6,7.0,0,0
+EMP-0283,2025-02-08,Marketing,L3,Male,New York,Remote,107842,38.0,3.1,8.3,44.2,0
+EMP-0284,2023-05-06,Engineering,L3,Female,New York,On-site,100160,38.6,4.9,8.1,7.0,0
+EMP-0285,2019-10-01,Finance,L1,Male,San Francisco,Hybrid,48495,93.4,3.8,9.5,12.7,0
+EMP-0286,2021-01-30,Sales,L2,Female,Remote,Hybrid,78082,47.4,2.6,5.2,16.8,0
+EMP-0287,2023-02-16,HR,L1,Male,Remote,Hybrid,48944,12.4,3.3,,14.6,0
+EMP-0288,2022-02-07,Sales,L2,Male,Austin,Hybrid,68026,73.1,3.5,7.3,26.9,1
+EMP-0289,2022-11-06,Support,L1,Male,San Francisco,Remote,57480,30.9,3.4,4.5,32.4,0
+EMP-0290,2024-05-14,Support,L2,Male,Austin,Remote,63563,46.4,3.2,6.2,8.1,0
+EMP-0291,2019-05-12,Sales,L2,Female,San Francisco,Remote,73504,49.6,3.7,5.0,18.3,0
+EMP-0292,2021-03-19,Support,L2,Female,Remote,Remote,77196,34.0,3.5,7.4,14.6,0
+EMP-0293,2020-12-31,Engineering,L1,Male,San Francisco,Remote,72258,71.5,2.0,7.6,0,1
+EMP-0294,2018-11-24,Engineering,L3,Female,Remote,Hybrid,94828,15.3,4.6,7.8,19.9,1
+EMP-0295,2020-10-10,Sales,L1,Female,Remote,Remote,54311,48.6,3.6,6.4,31.2,0
+EMP-0296,2025-10-28,Marketing,L4,Female,Austin,Remote,143342,49.5,3.0,5.6,3.0,0
+EMP-0297,2020-11-30,Sales,L2,Female,Austin,Remote,67102,34.5,4.4,5.2,44.6,0
+EMP-0298,2018-01-30,Marketing,L1,Male,San Francisco,Remote,62963,65.6,2.4,7.6,18.8,0
+EMP-0299,2025-10-13,Sales,L2,Male,Remote,On-site,84434,75.8,2.9,3.8,23.4,1
+EMP-0300,2019-09-16,Marketing,L2,Female,Austin,Remote,63626,52.7,4.9,7.2,40.5,1
+EMP-0301,2025-10-25,Engineering,L2,Female,Austin,Remote,68272,61.7,3.5,6.6,20.1,0
+EMP-0302,2022-12-20,Finance,L4,Male,Remote,Remote,124198,55.8,4.4,7.0,0,0
+EMP-0303,2023-11-04,Sales,L2,Female,New York,On-site,66002,36.7,3.0,4.5,26.6,0
+EMP-0304,2018-02-06,Sales,L1,Male,New York,On-site,46376,33.3,2.8,3.2,23.0,0
+EMP-0305,2019-09-23,Sales,L5,Female,New York,Remote,175150,28.5,4.2,5.9,26.0,0
+EMP-0306,2023-06-11,Engineering,L3,Male,New York,On-site,115012,9.1,3.4,5.8,4.5,0
+EMP-0307,2020-12-14,HR,L2,Male,New York,Remote,79747,74.2,4.2,6.7,12.6,0
+EMP-0308,2023-11-17,Sales,L3,Female,Austin,Remote,104387,48.9,2.7,4.6,18.9,1
+EMP-0309,2019-02-09,Finance,L1,Female,New York,Hybrid,46042,36.8,3.6,4.9,10.1,0
+EMP-0310,2018-11-24,Engineering,L5,Male,Austin,On-site,192879,28.9,2.6,5.5,3.5,0
+EMP-0311,2019-02-02,Engineering,L1,Male,Remote,On-site,54235,70.3,3.4,8.3,8.5,0
+EMP-0312,2019-03-03,Engineering,L3,Male,Austin,Hybrid,98770,35.2,2.6,6.6,0,0
+EMP-0313,2021-08-17,HR,L4,Male,Chicago,On-site,123775,14.9,3.9,9.0,11.5,0
+EMP-0314,2021-05-21,Support,L5,Female,Austin,On-site,140430,101.2,4.1,9.4,28.7,0
+EMP-0315,2019-07-21,Marketing,L4,Male,New York,Remote,125366,14.7,3.3,6.2,18.8,0
+EMP-0316,2024-06-18,Support,L3,Male,Remote,Hybrid,108853,57.1,3.1,6.0,18.4,0
+EMP-0317,2020-07-17,Sales,L4,Male,Remote,On-site,108749,40.9,3.6,4.9,16.6,0
+EMP-0318,2024-06-14,Engineering,L3,Non-binary,Remote,Hybrid,104352,70.7,3.6,5.9,0,0
+EMP-0319,2020-03-22,Sales,L2,Female,Remote,Hybrid,77986,50.5,2.6,4.4,14.6,0
+EMP-0320,2020-02-20,Support,L2,Male,San Francisco,Remote,72509,42.5,2.7,4.7,11.1,0
+EMP-0321,2018-12-18,Marketing,L4,Male,Chicago,Remote,115364,78.1,3.7,8.6,15.3,0
+EMP-0322,2024-02-17,Sales,L2,Male,Chicago,Remote,79146,29.3,2.5,4.6,17.0,0
+EMP-0323,2021-01-16,Marketing,L1,Male,New York,Hybrid,46739,14.2,3.3,6.5,2.8,1
+EMP-0324,2025-12-16,Sales,L4,Male,Remote,Hybrid,114527,3.5,2.9,5.4,30.2,0
+EMP-0325,2018-03-17,Engineering,L4,Male,Austin,Hybrid,146208,99.5,3.1,10.0,11.5,0
+EMP-0326,2021-10-31,HR,L5,Non-binary,Remote,Remote,165745,52.8,4.4,7.4,3.5,0
+EMP-0327,2020-04-26,Engineering,L5,Female,San Francisco,Hybrid,165197,25.0,4.0,7.4,26.1,0
+EMP-0328,2023-12-24,Finance,L3,Female,New York,Remote,105574,16.3,3.0,9.3,13.6,0
+EMP-0329,2020-02-09,Marketing,L5,Female,Remote,Remote,146997,0,5.0,7.4,3.3,0
+EMP-0330,2023-04-05,Engineering,L1,Female,New York,On-site,61168,26.3,2.7,6.8,0,0
+EMP-0331,2022-12-05,Sales,L3,Male,New York,Remote,102219,76.5,3.2,6.6,19.6,0
+EMP-0332,2025-11-24,Sales,L3,Female,Austin,Hybrid,107785,48.6,4.0,6.2,27.4,0
+EMP-0333,2022-12-06,Engineering,L2,Female,Remote,Remote,85430,33.5,3.2,7.5,22.7,0
+EMP-0334,2025-10-22,Support,L1,Female,New York,Hybrid,62904,28.6,2.5,7.5,8.7,0
+EMP-0335,2019-05-22,Sales,L3,Female,Remote,Hybrid,84988,26.3,3.0,5.6,8.8,0
+EMP-0336,2025-05-25,Sales,L2,Female,Remote,Hybrid,66918,70.9,3.9,7.1,16.2,0
+EMP-0337,2018-02-20,Engineering,L4,Non-binary,New York,Hybrid,151829,78.3,4.0,4.9,14.4,0
+EMP-0338,2020-04-30,Support,L1,Female,San Francisco,Hybrid,46602,76.6,3.6,7.1,34.9,0
+EMP-0339,2025-05-31,Engineering,L1,Non-binary,New York,Remote,71410,50.8,4.1,6.2,25.3,0
+EMP-0340,2019-05-15,Finance,L3,Female,New York,Hybrid,104761,53.4,3.2,8.0,12.7,0
+EMP-0341,2025-12-05,Marketing,L1,Female,Chicago,On-site,54410,52.4,3.4,5.8,0,0
+EMP-0342,2021-04-04,Support,L2,Female,Remote,Remote,68342,,2.3,6.2,18.4,0
+EMP-0343,2018-02-16,HR,L2,Male,Austin,Hybrid,82991,37.3,4.3,5.5,43.4,0
+EMP-0344,2021-10-16,Support,L3,Male,New York,Remote,104035,39.2,3.5,7.6,31.2,0
+EMP-0345,2024-05-03,Marketing,L4,Female,New York,Hybrid,128676,73.7,3.8,8.9,4.8,0
+EMP-0346,2024-10-16,Finance,L2,Male,Austin,Remote,74765,73.5,4.0,8.1,2.2,1
+EMP-0347,2019-12-18,Finance,L2,Female,San Francisco,Hybrid,65677,59.4,3.4,4.2,11.5,0
+EMP-0348,2019-02-07,Sales,L2,Female,San Francisco,Remote,78913,68.7,4.0,4.8,44.7,0
+EMP-0349,2025-05-23,Support,L1,Male,New York,Hybrid,55239,,3.1,4.7,24.5,0
+EMP-0350,2024-04-11,Support,L1,Male,New York,On-site,61844,62.2,2.4,6.2,38.9,1
+EMP-0351,2025-07-29,Sales,L4,Female,New York,Remote,111306,31.1,4.3,5.7,11.0,0
+EMP-0352,2023-12-26,Support,L2,Female,Chicago,Hybrid,64573,28.3,3.3,5.1,30.6,0
+EMP-0353,2024-12-01,Support,L3,Male,San Francisco,Remote,90455,0,2.8,8.1,27.0,1
+EMP-0354,2024-10-11,Marketing,L2,Male,New York,Hybrid,80831,0.8,4.2,8.3,6.7,0
+EMP-0355,2022-04-22,Sales,L2,Female,Austin,On-site,64164,73.3,3.6,3.5,5.8,1
+EMP-0356,2024-08-22,Support,L1,Female,Austin,Hybrid,64532,60.3,2.1,5.8,25.7,0
+EMP-0357,2019-07-24,Finance,L2,Female,Chicago,Remote,81030,42.7,3.3,6.7,17.8,0
+EMP-0358,2021-06-01,Engineering,L3,Male,Austin,On-site,107965,66.8,4.3,6.6,0,1
+EMP-0359,2019-03-26,HR,L5,Male,Austin,On-site,158494,42.2,4.0,8.9,8.7,0
+EMP-0360,2022-09-05,Support,L2,Male,San Francisco,On-site,67055,64.7,3.5,,18.3,1
+EMP-0361,2022-08-31,HR,L3,Non-binary,New York,Remote,96943,27.9,2.2,5.3,14.4,0
+EMP-0362,2025-12-26,Sales,L2,Male,Austin,Hybrid,78440,70.8,2.9,6.8,24.7,0
+EMP-0363,2021-02-18,HR,L1,Female,Austin,On-site,60235,15.1,3.0,5.3,3.4,0
+EMP-0364,2018-02-14,Marketing,L2,Female,Remote,Hybrid,77363,68.9,2.9,4.4,29.6,0
+EMP-0365,2025-01-21,Support,L3,Male,Remote,Remote,97504,16.2,3.1,6.7,19.7,1
+EMP-0366,2020-11-18,Engineering,L3,Male,Chicago,Remote,92702,75.5,3.0,6.1,15.6,0
+EMP-0367,2024-09-05,Engineering,L2,Male,Remote,On-site,76019,26.5,3.6,6.6,7.2,0
+EMP-0368,2023-05-05,Engineering,L1,Female,New York,Hybrid,60232,59.2,2.9,5.9,16.0,0
+EMP-0369,2018-06-18,Sales,L3,Male,San Francisco,Hybrid,85190,9.2,2.4,7.6,12.3,0
+EMP-0370,2025-07-15,Engineering,L3,Male,Remote,Hybrid,114159,14.5,1.8,6.9,12.1,0
+EMP-0371,2018-05-20,Marketing,L3,Male,Chicago,Remote,82776,72.7,3.8,7.1,22.6,0
+EMP-0372,2020-01-27,Engineering,L3,Male,Remote,Hybrid,95870,0,3.8,7.7,9.0,0
+EMP-0373,2022-04-17,Finance,L2,Male,New York,Hybrid,74733,96.0,3.9,5.2,15.4,0
+EMP-0374,2025-03-20,Engineering,L2,Male,Remote,Remote,74730,51.8,3.4,6.7,20.7,1
+EMP-0375,2022-05-22,Support,L5,Female,San Francisco,Hybrid,177659,,3.6,4.4,8.7,1
+EMP-0376,2024-01-02,Sales,L2,Female,Remote,Remote,73761,65.1,3.2,5.6,16.3,0
+EMP-0377,2022-04-23,Finance,L3,Male,New York,Hybrid,103650,28.3,3.1,3.9,9.9,0
+EMP-0378,2018-09-16,Engineering,L1,Female,Austin,Hybrid,69882,52.2,4.2,6.1,19.2,0
+EMP-0379,2024-01-07,Sales,L1,Female,Austin,On-site,49880,47.1,3.1,5.7,20.0,0
+EMP-0380,2019-02-03,Sales,L3,Male,Chicago,On-site,96948,45.3,3.6,4.8,32.1,1
+EMP-0381,2019-05-10,Engineering,L2,Female,Chicago,Hybrid,93498,64.4,3.9,4.6,6.0,1
+EMP-0382,2018-06-16,Sales,L3,Female,Austin,On-site,86370,34.0,4.0,3.6,40.9,1
+EMP-0383,2025-10-06,Support,L4,Male,Remote,Hybrid,116316,47.5,3.2,5.4,34.7,0
+EMP-0384,2018-01-19,Marketing,L5,Female,Remote,Remote,176550,33.5,4.4,7.9,3.2,0
+EMP-0385,2025-09-07,Finance,L3,Male,New York,On-site,109649,73.4,3.1,6.8,23.1,0
+EMP-0386,2024-01-11,Sales,L4,Female,New York,Hybrid,119526,53.5,4.4,5.5,23.0,0
+EMP-0387,2020-08-29,Support,L4,Male,New York,Remote,135039,68.8,3.4,7.4,1.1,0
+EMP-0388,2021-01-09,Marketing,L2,Male,Chicago,Hybrid,68626,49.5,4.1,7.1,18.9,0
+EMP-0389,2019-11-28,Engineering,L2,Male,Remote,On-site,92842,60.8,4.3,8.1,22.7,0
+EMP-0390,2024-08-20,Support,L3,Male,San Francisco,Hybrid,86881,44.2,4.0,5.8,38.2,0
+EMP-0391,2018-12-07,Sales,L4,Female,New York,Hybrid,144601,43.0,3.5,3.9,17.3,1
+EMP-0392,2023-02-07,Support,L1,Male,Austin,Hybrid,60196,57.6,3.5,5.7,14.3,0
+EMP-0393,2021-01-10,Engineering,L4,Male,New York,Hybrid,158983,62.9,3.4,4.9,20.8,0
+EMP-0394,2025-04-08,Engineering,L2,Male,New York,Remote,89986,34.1,3.3,5.9,0.8,0
+EMP-0395,2020-12-31,Finance,L3,Female,Remote,Remote,98500,37.2,3.5,7.2,2.3,0
+EMP-0396,2025-10-10,Support,L2,Male,Chicago,On-site,64150,47.3,3.5,6.3,32.9,0
+EMP-0397,2018-04-03,Engineering,L1,Male,New York,On-site,59610,95.0,3.7,6.0,11.9,1
+EMP-0398,2025-05-09,Finance,L4,Female,San Francisco,Hybrid,129384,40.4,3.3,5.2,2.0,0
+EMP-0399,2019-08-31,Finance,L1,Male,San Francisco,On-site,56571,52.4,3.9,6.2,7.0,0
+EMP-0400,2024-06-11,HR,L3,Male,New York,On-site,86144,41.9,3.2,7.4,0.8,0
+EMP-0401,2019-08-19,HR,L2,Male,New York,On-site,77009,0,4.2,9.8,0.5,0
+EMP-0402,2022-12-16,HR,L3,Non-binary,Chicago,On-site,93098,43.5,3.4,3.7,5.5,0
+EMP-0403,2020-06-28,Marketing,L1,Male,Chicago,Hybrid,54107,39.1,4.1,8.1,33.1,0
+EMP-0404,2022-10-18,Support,L2,Male,Chicago,Remote,74112,29.2,3.9,6.8,9.9,0
+EMP-0405,2022-10-03,Support,L2,Male,New York,Hybrid,75572,54.5,3.1,6.4,2.1,1
+EMP-0406,2022-08-25,HR,L3,Male,San Francisco,On-site,87730,52.0,3.3,4.4,15.1,1
+EMP-0407,2018-04-20,Finance,L4,Male,Austin,Hybrid,108160,64.9,3.4,8.6,20.4,0
+EMP-0408,2018-10-01,HR,L3,Male,Remote,Hybrid,101624,67.9,2.8,5.8,5.7,1
+EMP-0409,2021-08-02,Marketing,L2,Female,New York,Remote,77107,27.0,3.5,7.3,0,0
+EMP-0410,2019-01-23,Marketing,L5,Female,Remote,Remote,179240,68.5,2.7,5.9,9.3,0
+EMP-0411,2022-03-08,Engineering,L3,Female,New York,Hybrid,118108,27.9,3.7,6.4,12.9,0
+EMP-0412,2019-04-12,Finance,L2,Female,Austin,Hybrid,75675,59.0,4.3,7.9,5.1,0
+EMP-0413,2018-04-28,HR,L3,Female,San Francisco,Hybrid,106394,47.4,3.7,9.4,12.6,1
+EMP-0414,2018-06-24,Support,L3,Male,Remote,Hybrid,88434,56.3,3.7,5.1,27.6,0
+EMP-0415,2020-01-27,Finance,L3,Female,New York,On-site,103974,56.4,4.5,8.2,19.0,0
+EMP-0416,2018-02-27,Support,L1,Female,New York,Hybrid,62328,38.6,3.3,7.8,0,0
+EMP-0417,2019-03-16,Marketing,L3,Male,Austin,Hybrid,87926,31.3,4.1,6.5,0.7,0
+EMP-0418,2018-12-03,Marketing,L2,Male,San Francisco,Hybrid,72751,65.4,2.8,7.7,6.1,0
+EMP-0419,2025-08-13,HR,L2,Female,Remote,On-site,74040,6.1,4.0,6.7,1.1,1
+EMP-0420,2018-09-23,Sales,L3,Male,Remote,On-site,93918,57.2,3.1,6.8,35.7,0
+EMP-0421,2022-06-28,Support,L3,Male,Remote,Hybrid,93668,74.3,3.0,5.8,18.9,0
+EMP-0422,2018-10-07,Marketing,L3,Male,New York,Remote,98322,82.0,4.1,6.5,18.4,1
+EMP-0423,2023-07-02,Finance,L3,Female,New York,Hybrid,98541,70.1,2.8,9.0,13.9,0
+EMP-0424,2024-03-30,Sales,L2,Male,Austin,Remote,83607,43.4,3.0,7.3,32.5,1
+EMP-0425,2019-10-03,Support,L3,Female,Austin,Hybrid,98603,71.1,3.4,8.6,14.4,1
+EMP-0426,2025-01-04,Support,L1,Male,Remote,Hybrid,56182,11.4,1.4,8.6,29.0,0
+EMP-0427,2024-01-15,Engineering,L3,Female,New York,Remote,97666,50.7,2.9,7.5,20.9,0
+EMP-0428,2020-04-23,Support,L2,Male,Austin,Hybrid,73008,48.2,3.6,4.8,13.9,0
+EMP-0429,2021-05-02,HR,L1,Female,New York,Remote,63793,100.3,3.2,9.0,14.0,1
+EMP-0430,2021-05-21,Finance,L2,Male,Remote,Hybrid,78536,36.9,2.6,7.4,2.8,0
+EMP-0431,2020-05-22,Engineering,L1,Female,Remote,Hybrid,64943,62.7,3.5,4.1,23.8,0
+EMP-0432,2022-08-08,Marketing,L1,Female,Remote,On-site,55441,30.9,3.8,5.6,11.3,0
+EMP-0433,2021-06-25,Sales,L1,Male,New York,On-site,60209,63.0,3.7,5.1,24.4,0
+EMP-0434,2018-03-23,Sales,L2,Female,New York,Hybrid,63812,61.8,4.0,6.2,30.3,0
+EMP-0435,2023-08-12,Engineering,L5,Female,New York,Remote,163021,31.8,5.0,5.7,16.4,0
+EMP-0436,2022-09-29,Sales,L3,Male,Chicago,Remote,89143,34.2,4.2,8.5,21.6,0
+EMP-0437,2019-08-17,HR,L2,Male,Chicago,On-site,73894,74.3,3.0,7.6,13.8,0
+EMP-0438,2025-03-02,Engineering,L4,Female,San Francisco,Remote,150270,41.7,3.3,6.5,32.3,0
+EMP-0439,2019-10-19,Sales,L5,Female,San Francisco,On-site,168760,47.8,4.6,3.6,41.6,0
+EMP-0440,2019-02-16,Marketing,L2,Female,Chicago,On-site,67254,54.3,2.7,6.6,17.1,1
+EMP-0441,2022-06-30,Engineering,L3,Female,Remote,Remote,98547,11.8,3.8,7.1,26.8,0
+EMP-0442,2020-12-03,Support,L3,Male,Austin,Hybrid,87684,37.1,4.0,4.5,16.6,0
+EMP-0443,2025-01-10,HR,L1,Non-binary,Remote,Hybrid,52494,52.1,3.5,6.5,16.0,0
+EMP-0444,2022-11-18,Engineering,L2,Non-binary,New York,Hybrid,87069,64.4,3.4,7.6,14.4,0
+EMP-0445,2020-02-15,Marketing,L1,Male,Remote,Hybrid,58707,29.0,3.1,6.4,12.8,0
+EMP-0446,2022-06-17,Support,L1,Male,Remote,On-site,51953,69.0,2.8,4.5,24.9,0
+EMP-0447,2018-07-06,HR,L5,Female,Remote,Hybrid,140351,49.3,3.5,5.9,0,0
+EMP-0448,2021-07-23,Sales,L2,Female,Remote,Remote,79380,86.9,3.3,6.4,0,0
+EMP-0449,2023-10-19,Marketing,L4,Male,Remote,On-site,128513,45.3,4.2,8.7,21.7,0
+EMP-0450,2019-11-01,Marketing,L1,Male,New York,Hybrid,60307,36.3,4.5,6.6,4.2,0
+EMP-0451,2020-01-10,Finance,L4,Male,New York,On-site,119029,72.1,4.0,5.1,43.8,0
+EMP-0452,2021-03-10,HR,L1,Female,New York,Remote,48997,120,1.9,4.9,13.9,0
+EMP-0453,2025-05-11,Marketing,L5,Female,New York,On-site,169694,52.4,3.8,4.4,7.0,0
+EMP-0454,2022-06-22,Sales,L1,Male,Remote,Remote,53361,38.6,4.3,4.6,25.6,1
+EMP-0455,2021-06-24,Finance,L3,Male,Austin,Hybrid,104444,34.5,3.3,7.2,14.7,0
+EMP-0456,2025-01-27,Support,L1,Male,San Francisco,Remote,58959,67.7,1.5,6.4,12.5,0
+EMP-0457,2021-05-15,Support,L1,Male,New York,On-site,49869,17.2,2.9,5.6,10.3,0
+EMP-0458,2020-11-03,Marketing,L2,Male,Austin,Hybrid,73647,57.5,3.9,7.5,9.3,0
+EMP-0459,2025-07-08,Engineering,L4,Male,Austin,Hybrid,152937,33.2,4.9,6.1,17.3,0
+EMP-0460,2023-05-09,Engineering,L2,Male,New York,Remote,86264,78.5,4.1,6.3,0,0
+EMP-0461,2019-04-04,Support,L2,Male,New York,Remote,62520,4.7,3.4,7.0,26.6,0
+EMP-0462,2019-04-23,Marketing,L1,Female,New York,Hybrid,50442,57.9,3.1,5.2,20.7,0
+EMP-0463,2022-11-04,Finance,L2,Male,New York,On-site,75621,48.0,3.2,4.8,9.7,0
+EMP-0464,2023-12-04,Support,L3,Female,Austin,Hybrid,82623,69.6,3.4,7.2,12.2,0
+EMP-0465,2021-11-09,Sales,L3,Male,San Francisco,Remote,96356,57.4,3.7,8.2,6.6,1
+EMP-0466,2022-01-15,Sales,L3,Non-binary,Remote,Hybrid,108082,19.7,3.9,5.0,20.5,1
+EMP-0467,2020-08-19,Engineering,L2,Female,Remote,Hybrid,76139,36.3,3.0,7.5,19.2,0
+EMP-0468,2021-10-25,Sales,L1,Male,Austin,Hybrid,56640,83.8,3.2,3.4,34.3,1
+EMP-0469,2019-03-10,Engineering,L5,Female,Remote,Hybrid,200000,9.4,4.0,6.3,0.9,0
+EMP-0470,2025-04-04,Sales,L2,Female,Chicago,Remote,73918,12.6,4.1,7.3,7.2,0
+EMP-0471,2022-01-17,Sales,L2,Male,San Francisco,Hybrid,82625,64.0,3.9,7.1,24.5,0
+EMP-0472,2019-08-20,Marketing,L4,Female,San Francisco,Remote,108651,84.2,3.5,6.6,0.8,0
+EMP-0473,2025-12-31,Engineering,L4,Male,Austin,On-site,162985,66.9,4.4,5.3,10.8,0
+EMP-0474,2024-02-08,HR,L3,Male,San Francisco,Hybrid,102459,26.2,3.0,4.9,13.6,0
+EMP-0475,2024-01-25,Engineering,L2,Female,Chicago,Remote,76392,23.0,3.1,7.9,28.6,0
+EMP-0476,2022-03-08,Finance,L2,Male,Austin,Hybrid,70511,51.8,3.2,7.0,16.8,0
+EMP-0477,2025-01-15,HR,L4,Non-binary,Austin,On-site,142949,58.1,3.8,7.9,16.1,0
+EMP-0478,2023-02-04,Support,L1,Female,New York,Hybrid,48210,18.7,2.5,7.3,17.3,1
+EMP-0479,2024-07-21,Support,L2,Female,Remote,On-site,78345,50.3,4.2,6.7,20.8,0
+EMP-0480,2025-10-15,Marketing,L2,Non-binary,Austin,Hybrid,68967,22.3,3.6,6.9,15.5,1
+EMP-0481,2022-03-14,Sales,L2,Female,New York,Remote,71937,39.8,3.6,5.3,1.3,0
+EMP-0482,2018-07-03,Engineering,L3,Male,Austin,Remote,105071,69.4,3.0,7.1,19.7,1
+EMP-0483,2019-01-01,Support,L3,Female,New York,Hybrid,108208,9.1,3.1,5.7,20.4,0
+EMP-0484,2025-12-07,Sales,L1,Male,New York,Hybrid,55120,50.7,3.6,6.5,12.4,0
+EMP-0485,2020-01-07,Engineering,L2,Female,New York,On-site,67473,25.4,3.9,4.4,20.5,0
+EMP-0486,2023-12-03,Marketing,L5,Male,New York,Remote,160799,58.8,5.0,8.8,10.9,0
+EMP-0487,2025-12-31,HR,L3,Male,Remote,Remote,83916,58.6,3.8,7.2,11.0,1
+EMP-0488,2019-04-17,Sales,L3,Male,Austin,Hybrid,90824,97.4,2.9,5.5,15.9,0
+EMP-0489,2021-06-01,HR,L3,Male,Austin,On-site,100620,53.8,4.2,7.7,19.6,0
+EMP-0490,2023-03-19,Marketing,L2,Female,Austin,Remote,82340,40.7,3.3,6.7,1.3,0
+EMP-0491,2023-12-28,Sales,L3,Female,Austin,Remote,100451,48.3,4.3,6.4,16.3,1
+EMP-0492,2025-12-08,Marketing,L4,Female,Remote,Hybrid,137669,0,3.4,5.6,18.9,0
+EMP-0493,2024-03-26,HR,L3,Male,New York,Remote,104822,40.0,3.6,5.0,10.1,0
+EMP-0494,2022-01-06,Support,L3,Male,Remote,On-site,94673,37.9,3.6,,6.6,0
+EMP-0495,2022-01-05,Marketing,L1,Male,San Francisco,On-site,51275,30.9,2.8,6.9,21.3,0
+EMP-0496,2022-06-11,HR,L3,Male,New York,On-site,85635,21.7,3.2,5.7,3.3,0
+EMP-0497,2020-07-22,Engineering,L1,Male,San Francisco,Hybrid,69776,47.7,3.0,5.9,2.1,0
+EMP-0498,2021-08-16,Engineering,L2,Female,Chicago,On-site,86413,64.2,3.8,6.3,11.7,1
+EMP-0499,2024-05-31,HR,L2,Male,San Francisco,Remote,62831,50.1,4.2,7.5,9.4,1
+EMP-0500,2021-10-01,Support,L1,Male,New York,On-site,53205,0,3.4,7.4,11.1,1
+EMP-0501,2018-09-06,Support,L2,Male,Austin,Remote,63092,71.1,2.7,9.0,28.8,0
+EMP-0502,2022-07-04,Marketing,L1,Male,New York,On-site,48140,7.7,3.7,5.6,5.8,0
+EMP-0503,2023-10-20,Support,L1,Female,Chicago,Remote,55754,47.7,3.2,4.5,11.4,1
+EMP-0504,2019-07-18,Marketing,L2,Female,Chicago,Remote,63444,36.1,3.9,6.7,5.1,0
+EMP-0505,2024-07-30,Engineering,L2,Male,San Francisco,Remote,93394,3.3,3.2,5.9,14.5,0
+EMP-0506,2024-09-22,Finance,L2,Female,Chicago,On-site,84689,0,2.6,6.0,14.3,0
+EMP-0507,2024-12-30,Engineering,L1,Male,San Francisco,Remote,55825,63.9,2.9,6.9,16.9,0
+EMP-0508,2024-07-26,Engineering,L1,Male,San Francisco,Remote,59881,,3.2,7.5,10.6,1
+EMP-0509,2022-04-02,Engineering,L4,Female,New York,Hybrid,124936,25.3,3.1,7.1,16.6,0
+EMP-0510,2020-02-16,Marketing,L3,Male,Remote,Remote,88281,68.7,3.3,5.5,0.2,0
+EMP-0511,2021-02-21,Finance,L2,Male,San Francisco,Hybrid,66143,7.6,4.5,6.1,19.9,1
+EMP-0512,2023-03-17,Marketing,L3,Female,Austin,Hybrid,87865,57.1,2.9,8.2,5.7,0
+EMP-0513,2022-06-10,Support,L1,Male,New York,On-site,52162,45.6,3.7,5.5,13.1,1
+EMP-0514,2022-10-12,Marketing,L2,Female,Austin,Hybrid,76783,64.8,2.4,8.1,8.3,0
+EMP-0515,2021-02-06,Sales,L1,Female,Austin,Hybrid,52462,54.3,3.3,5.4,24.9,0
+EMP-0516,2024-02-03,Support,L1,Female,Remote,On-site,53556,,3.6,7.8,6.3,0
+EMP-0517,2019-09-04,Support,L3,Male,Austin,Hybrid,95025,42.5,3.1,5.2,15.4,0
+EMP-0518,2022-09-07,Sales,L1,Female,Austin,On-site,51867,48.3,3.0,6.0,15.9,0
+EMP-0519,2025-09-29,Support,L2,Male,Austin,Hybrid,79616,20.7,2.9,9.2,43.1,0
+EMP-0520,2022-05-20,Finance,L4,Female,San Francisco,Remote,112175,49.0,4.0,3.9,17.1,1
+EMP-0521,2018-10-12,Marketing,L1,Female,Austin,Remote,57644,48.4,4.0,8.3,15.4,0
+EMP-0522,2018-10-09,Sales,L1,Male,Austin,Hybrid,57746,52.7,2.9,3.2,28.5,0
+EMP-0523,2018-01-31,HR,L3,Female,Chicago,Remote,86675,58.5,2.8,5.8,21.1,0
+EMP-0524,2025-12-24,Engineering,L1,Female,Remote,Remote,59624,58.4,2.6,5.6,6.3,0
+EMP-0525,2019-10-09,Support,L1,Female,New York,On-site,53971,13.3,2.9,6.3,0.7,0
+EMP-0526,2021-08-28,Finance,L1,Male,Remote,Hybrid,58438,44.5,3.8,8.6,17.5,0
+EMP-0527,2019-07-14,Support,L4,Male,New York,Remote,129437,21.1,3.8,5.5,8.8,0
+EMP-0528,2019-05-24,Sales,L1,Female,Chicago,Remote,62519,61.1,3.9,,20.4,0
+EMP-0529,2023-11-12,HR,L2,Male,New York,Hybrid,83004,68.5,3.2,6.1,1.9,0
+EMP-0530,2018-04-25,Engineering,L1,Female,New York,Remote,49283,55.2,2.9,5.8,16.4,1
+EMP-0531,2020-04-28,Sales,L1,Male,Austin,Remote,62750,5.3,2.7,5.6,21.2,1
+EMP-0532,2018-06-29,Engineering,L1,Female,San Francisco,Hybrid,53746,48.4,3.2,5.1,8.7,0
+EMP-0533,2025-10-12,Sales,L1,Male,Chicago,Remote,49355,7.1,2.3,3.0,28.8,0
+EMP-0534,2018-02-24,Support,L2,Female,San Francisco,Hybrid,69622,,2.7,7.4,27.2,0
+EMP-0535,2025-03-14,Engineering,L1,Female,New York,Remote,49654,68.8,3.1,7.5,17.2,1
+EMP-0536,2021-09-18,Finance,L2,Female,Remote,Remote,73230,0,3.0,6.7,24.2,0
+EMP-0537,2018-10-14,Sales,L2,Male,New York,On-site,68306,96.9,3.2,6.0,33.2,1
+EMP-0538,2022-10-03,Marketing,L2,Male,New York,Remote,67781,35.6,4.0,7.5,27.2,0
+EMP-0539,2022-11-11,Sales,L2,Male,Austin,Hybrid,67107,46.2,3.2,6.6,8.6,0
+EMP-0540,2022-03-17,Engineering,L3,Male,Austin,Hybrid,111526,61.2,4.0,6.8,13.2,0
+EMP-0541,2023-06-29,Marketing,L4,Non-binary,Remote,Remote,128172,25.8,3.4,7.9,8.3,0
+EMP-0542,2023-06-25,Marketing,L1,Female,Chicago,Hybrid,57064,15.7,2.0,6.7,14.1,0
+EMP-0543,2025-08-21,Support,L3,Female,San Francisco,Hybrid,86828,1.6,2.6,9.1,23.3,0
+EMP-0544,2022-09-29,Sales,L3,Female,Austin,Remote,87433,44.7,4.0,4.5,13.8,0
+EMP-0545,2021-11-11,Finance,L3,Male,Chicago,Hybrid,108680,44.6,2.1,5.2,34.0,1
+EMP-0546,2019-11-30,Engineering,L3,Female,Chicago,Hybrid,95457,49.5,3.9,4.3,16.5,1
+EMP-0547,2025-01-11,Engineering,L3,Male,Remote,Hybrid,108702,53.2,3.6,7.0,12.8,0
+EMP-0548,2018-06-21,Finance,L1,Male,Remote,Hybrid,48173,50.5,2.5,7.8,10.5,0
+EMP-0549,2020-09-08,Support,L2,Female,San Francisco,Remote,73836,39.5,3.4,6.4,26.0,0
+EMP-0550,2021-02-18,Support,L4,Male,Chicago,On-site,124288,21.3,3.1,5.9,25.3,0
+EMP-0551,2021-08-26,Finance,L1,Male,New York,On-site,59559,9.1,3.2,4.8,27.4,0
+EMP-0552,2025-12-26,Support,L3,Male,San Francisco,Hybrid,86691,72.5,2.8,8.3,24.3,0
+EMP-0553,2023-05-29,HR,L5,Male,Remote,On-site,175433,53.8,4.9,8.0,16.6,0
+EMP-0554,2023-05-05,HR,L4,Female,San Francisco,Remote,116067,72.6,3.3,7.1,5.1,0
+EMP-0555,2022-04-13,HR,L1,Male,Remote,Hybrid,63412,30.2,3.3,6.5,15.8,0
+EMP-0556,2022-04-07,Engineering,L5,Female,New York,Remote,199801,32.9,3.7,4.6,18.3,0
+EMP-0557,2023-03-02,Engineering,L3,Female,New York,Remote,98305,58.5,2.9,6.1,9.3,0
+EMP-0558,2025-12-03,Support,L3,Male,Remote,Remote,100807,57.2,2.9,3.9,41.7,0
+EMP-0559,2020-01-04,Engineering,L3,Female,Chicago,Remote,109999,64.3,2.3,8.1,13.1,0
+EMP-0560,2020-03-10,Sales,L2,Male,Chicago,Remote,84973,35.8,3.5,3.0,13.2,0
+EMP-0561,2019-08-17,Marketing,L1,Male,Chicago,Remote,51873,44.6,2.1,,10.4,0
+EMP-0562,2019-01-29,Engineering,L5,Male,Remote,On-site,187376,16.5,5.0,8.0,0,0
+EMP-0563,2025-04-27,Engineering,L1,Female,Chicago,On-site,64610,12.8,3.0,6.2,15.3,0
+EMP-0564,2020-07-10,Engineering,L1,Male,Chicago,On-site,50726,25.4,2.2,7.0,5.4,0
+EMP-0565,2024-01-11,Sales,L1,Male,Chicago,On-site,51058,33.1,2.9,3.9,24.6,0
+EMP-0566,2025-05-21,Marketing,L4,Female,Remote,Remote,115689,18.6,3.4,6.2,13.3,0
+EMP-0567,2023-09-05,Engineering,L2,Female,New York,On-site,77981,34.3,2.0,,21.0,0
+EMP-0568,2025-10-18,Marketing,L3,Female,Austin,Hybrid,92254,65.4,3.5,6.9,15.5,0
+EMP-0569,2020-06-03,Engineering,L2,Female,Remote,Hybrid,88383,38.8,3.1,4.5,23.7,1
+EMP-0570,2021-01-08,Sales,L2,Female,Austin,Remote,82746,52.5,3.8,6.0,9.7,1
+EMP-0571,2019-05-26,HR,L2,Male,Chicago,Remote,79415,37.2,3.2,5.9,17.5,0
+EMP-0572,2019-03-07,Sales,L1,Male,Remote,Remote,49046,42.4,2.6,3.5,22.8,0
+EMP-0573,2022-05-15,Marketing,L3,Female,New York,On-site,87920,41.8,1.9,4.4,3.3,1
+EMP-0574,2020-12-31,Engineering,L2,Male,New York,Remote,72772,18.9,4.1,5.4,16.3,0
+EMP-0575,2020-07-26,Marketing,L2,Non-binary,Austin,Hybrid,72000,61.1,3.6,7.8,2.6,0
+EMP-0576,2018-02-13,Engineering,L2,Male,San Francisco,On-site,84825,61.9,3.8,5.9,3.2,1
+EMP-0577,2021-11-14,Engineering,L4,Male,Austin,Hybrid,142534,117.7,2.6,6.5,9.8,0
+EMP-0578,2019-07-01,HR,L3,Female,New York,Remote,98832,69.4,3.7,7.9,10.6,0
+EMP-0579,2018-01-10,Finance,L4,Male,Austin,Remote,133796,27.7,5.0,6.9,10.1,0
+EMP-0580,2018-01-22,Marketing,L2,Female,San Francisco,Remote,73459,53.0,3.8,6.1,12.2,0
+EMP-0581,2022-06-08,Engineering,L2,Male,Chicago,Remote,80200,61.6,4.3,4.2,17.8,0
+EMP-0582,2018-06-14,Marketing,L2,Female,New York,Remote,66380,43.2,2.0,7.2,20.7,0
+EMP-0583,2022-06-26,Marketing,L2,Female,Chicago,Remote,78444,42.9,2.2,9.1,8.3,0
+EMP-0584,2024-09-11,Engineering,L3,Male,Remote,Hybrid,111557,43.2,3.7,5.0,3.3,0
+EMP-0585,2023-04-26,Engineering,L1,Female,Chicago,Hybrid,54187,73.9,4.8,6.0,7.7,1
+EMP-0586,2018-07-28,HR,L4,Male,Chicago,Remote,132926,34.2,4.5,5.9,19.8,0
+EMP-0587,2021-08-03,Sales,L1,Male,San Francisco,Hybrid,46558,77.3,3.1,5.0,29.9,0
+EMP-0588,2025-08-29,Sales,L2,Male,New York,Hybrid,80080,59.2,3.7,5.1,8.7,1
+EMP-0589,2024-10-01,Sales,L3,Male,New York,Hybrid,85943,89.8,3.3,5.7,32.2,0
+EMP-0590,2019-09-22,Support,L2,Male,Remote,Hybrid,63435,14.8,3.8,6.9,2.7,0
+EMP-0591,2023-11-16,Sales,L3,Male,Austin,Hybrid,98510,53.8,3.9,4.3,45,0
+EMP-0592,2018-11-04,Engineering,L4,Female,Austin,Hybrid,129991,24.8,3.5,6.7,12.7,0
+EMP-0593,2020-11-26,Engineering,L4,Female,Austin,Hybrid,145179,43.7,4.0,5.6,10.6,0
+EMP-0594,2020-05-10,Sales,L1,Female,New York,On-site,62517,26.5,2.4,3.7,43.6,1
+EMP-0595,2018-02-12,Engineering,L4,Male,Remote,Hybrid,140739,71.1,5.0,9.1,10.2,0
+EMP-0596,2024-03-06,Support,L2,Female,Remote,Hybrid,68755,48.2,3.8,7.5,6.4,0
+EMP-0597,2020-01-28,Support,L2,Female,New York,Remote,67770,9.5,3.4,7.5,22.8,0
+EMP-0598,2022-07-07,Support,L1,Male,San Francisco,On-site,48284,68.8,3.9,,30.0,1
+EMP-0599,2025-01-13,Finance,L5,Male,Remote,Remote,179297,,4.2,7.3,11.0,0
+EMP-0600,2019-10-31,Support,L1,Female,Austin,Hybrid,55072,49.2,3.3,6.2,18.3,1
+EMP-0601,2018-04-09,Sales,L2,Female,New York,On-site,69427,64.3,4.0,6.2,15.2,0
+EMP-0602,2022-01-03,Engineering,L1,Male,New York,On-site,52798,88.8,2.5,6.0,8.9,0
+EMP-0603,2021-11-27,Support,L1,Female,San Francisco,On-site,48405,23.9,3.1,8.8,12.1,0
+EMP-0604,2023-05-14,HR,L3,Male,New York,Hybrid,108694,0,2.8,10.0,26.0,0
+EMP-0605,2021-09-27,Sales,L2,Female,San Francisco,On-site,66529,35.6,2.9,3.5,22.2,0
+EMP-0606,2020-06-17,Sales,L3,Male,Austin,Hybrid,105038,35.4,3.8,4.2,30.6,1
+EMP-0607,2023-03-01,HR,L2,Female,Remote,Remote,66723,0,2.9,6.9,17.5,1
+EMP-0608,2018-08-10,Support,L1,Female,Chicago,Hybrid,48473,82.5,3.6,8.0,23.8,1
+EMP-0609,2023-12-01,Marketing,L4,Male,New York,Hybrid,127628,40.9,3.1,7.4,12.3,0
+EMP-0610,2023-02-04,Support,L1,Male,San Francisco,Hybrid,63158,43.6,3.9,7.2,44.9,1
+EMP-0611,2022-05-26,Sales,L5,Female,San Francisco,Remote,152038,74.6,3.8,4.6,11.3,0
+EMP-0612,2019-03-04,Sales,L1,Male,Austin,Remote,47549,48.6,2.6,5.5,26.0,1
+EMP-0613,2018-12-15,HR,L1,Male,Remote,Remote,63681,9.2,2.7,5.4,41.8,0
+EMP-0614,2025-11-18,Sales,L1,Female,Chicago,On-site,48190,65.7,2.7,5.2,19.8,0
+EMP-0615,2025-01-07,Finance,L1,Male,Chicago,Remote,48056,46.8,3.5,8.1,21.9,0
+EMP-0616,2019-06-22,HR,L3,Female,Remote,Hybrid,93109,7.7,2.5,6.2,0.2,0
+EMP-0617,2018-03-03,Support,L5,Female,Remote,Remote,149346,28.8,5.0,8.0,14.8,0
+EMP-0618,2025-12-20,Sales,L1,Female,San Francisco,Remote,60097,28.3,3.2,4.7,17.5,0
+EMP-0619,2019-06-13,Engineering,L4,Male,Remote,On-site,148754,65.3,3.5,5.6,11.8,0
+EMP-0620,2018-02-02,Support,L3,Female,San Francisco,On-site,87064,41.7,3.8,7.9,26.4,1
+EMP-0621,2019-03-20,Marketing,L3,Female,Austin,Remote,95007,51.1,4.0,8.3,11.8,0
+EMP-0622,2021-08-04,Sales,L1,Male,Austin,Hybrid,63618,27.7,2.8,4.2,30.1,1
+EMP-0623,2018-12-09,Finance,L5,Female,San Francisco,Hybrid,149288,29.7,4.2,7.9,4.9,0
+EMP-0624,2019-11-05,Finance,L1,Female,San Francisco,Hybrid,51507,23.2,3.4,7.9,22.5,0
+EMP-0625,2025-06-28,Sales,L1,Female,Austin,Remote,63955,16.2,4.7,5.1,5.7,1
+EMP-0626,2022-07-23,Marketing,L1,Female,New York,On-site,53611,69.1,3.1,7.8,18.2,1
+EMP-0627,2022-03-27,Engineering,L5,Male,Austin,Remote,167238,73.4,3.8,,12.6,0
+EMP-0628,2021-12-13,Finance,L3,Female,Austin,Hybrid,109137,41.3,2.5,6.4,15.8,0
+EMP-0629,2021-03-06,Marketing,L2,Female,Chicago,Hybrid,82328,65.8,3.5,6.3,13.8,0
+EMP-0630,2023-08-24,Engineering,L3,Female,Austin,Hybrid,114240,36.9,3.7,5.9,8.3,0
+EMP-0631,2022-06-10,Sales,L3,Male,Remote,Hybrid,82249,41.5,3.6,3.6,17.3,0
+EMP-0632,2022-03-14,Support,L1,Female,New York,Remote,62005,29.2,2.7,6.0,29.4,1
+EMP-0633,2025-02-19,Support,L4,Female,Austin,Remote,133586,44.3,4.3,9.4,17.8,0
+EMP-0634,2024-03-14,Support,L3,Female,Chicago,Remote,87211,48.9,3.6,7.3,12.7,0
+EMP-0635,2023-02-02,HR,L1,Male,Chicago,Remote,56734,23.6,2.9,5.9,18.9,0
+EMP-0636,2024-07-01,Sales,L1,Male,New York,Remote,48388,15.2,3.4,4.9,21.5,0
+EMP-0637,2023-06-16,HR,L1,Male,Remote,Hybrid,47500,58.8,2.0,8.1,7.5,0
+EMP-0638,2021-11-21,Support,L3,Female,New York,Remote,97856,49.0,3.5,6.6,21.9,0
+EMP-0639,2018-05-01,Marketing,L3,Male,San Francisco,On-site,92732,56.2,4.3,7.8,11.2,0
+EMP-0640,2020-03-01,Support,L2,Female,Austin,On-site,70195,59.5,2.8,4.0,11.7,0
+EMP-0641,2021-01-17,Finance,L5,Female,Remote,Hybrid,160889,63.2,3.4,5.8,4.0,0
+EMP-0642,2025-03-27,Engineering,L2,Female,San Francisco,On-site,86148,,3.9,5.6,24.7,1
+EMP-0643,2018-02-14,Support,L2,Female,New York,Remote,72776,27.3,3.1,7.7,25.3,0
+EMP-0644,2024-06-08,Marketing,L3,Non-binary,Remote,Hybrid,103176,45.7,3.0,7.5,25.6,0
+EMP-0645,2024-06-18,Marketing,L1,Male,San Francisco,Remote,45696,18.2,2.2,7.7,8.6,0
+EMP-0646,2019-01-25,HR,L4,Male,Chicago,Remote,135202,39.3,4.7,5.6,9.6,0
+EMP-0647,2022-03-12,Support,L2,Female,Remote,Remote,82249,51.7,4.4,9.5,21.2,0
+EMP-0648,2018-01-21,Engineering,L3,Female,Remote,Hybrid,118854,47.3,3.2,7.8,15.2,0
+EMP-0649,2019-08-30,Sales,L1,Male,Austin,Remote,64140,67.2,3.0,6.4,30.5,0
+EMP-0650,2021-04-28,HR,L2,Female,San Francisco,Remote,64713,53.4,2.9,8.0,2.3,0
+EMP-0651,2021-10-26,Engineering,L3,Male,San Francisco,Hybrid,100510,26.0,3.5,6.2,0.7,1
+EMP-0652,2020-04-11,Engineering,L4,Male,Austin,Hybrid,143461,54.7,4.1,6.2,8.4,0
+EMP-0653,2023-01-29,Sales,L4,Male,New York,Hybrid,131065,53.3,3.6,6.2,31.6,1
+EMP-0654,2021-04-19,Sales,L1,Female,Chicago,Hybrid,51207,22.6,2.7,3.3,28.1,0
+EMP-0655,2019-02-18,Engineering,L1,Male,San Francisco,Remote,57950,40.3,2.5,6.4,0,0
+EMP-0656,2019-01-22,Finance,L2,Male,Austin,Hybrid,68064,37.3,2.6,7.6,8.7,1
+EMP-0657,2021-09-30,Engineering,L4,Male,New York,Hybrid,116773,74.4,4.1,3.6,0.2,0
+EMP-0658,2020-07-24,Sales,L1,Female,Austin,On-site,62212,46.2,2.1,5.6,13.5,0
+EMP-0659,2021-05-18,Marketing,L3,Male,Austin,On-site,105270,12.7,3.4,7.6,4.3,0
+EMP-0660,2022-01-03,Support,L1,Male,San Francisco,On-site,61312,15.0,2.7,6.9,26.2,0
+EMP-0661,2023-11-29,Engineering,L1,Female,Austin,On-site,54614,61.7,2.7,7.9,11.7,0
+EMP-0662,2021-11-22,Sales,L3,Male,Austin,On-site,91450,95.3,3.6,4.5,11.0,0
+EMP-0663,2020-06-09,Engineering,L2,Male,San Francisco,Hybrid,80720,42.8,3.3,6.9,9.8,0
+EMP-0664,2025-12-31,Finance,L2,Non-binary,Austin,On-site,70869,42.5,2.7,6.6,14.0,0
+EMP-0665,2021-05-22,Support,L2,Male,Remote,On-site,81563,14.5,2.9,4.8,14.8,1
+EMP-0666,2024-02-14,Marketing,L2,Male,Austin,Hybrid,68008,61.8,2.8,5.6,14.5,0
+EMP-0667,2024-04-08,Marketing,L2,Male,San Francisco,Remote,62865,12.5,3.8,6.4,17.6,1
+EMP-0668,2022-07-09,Marketing,L2,Male,Remote,Remote,83957,,3.7,4.0,14.5,0
+EMP-0669,2018-09-07,Sales,L1,Male,Austin,Remote,48979,47.5,2.7,3.2,23.6,0
+EMP-0670,2018-01-27,Sales,L3,Female,San Francisco,Remote,108398,56.8,3.4,,17.4,1
+EMP-0671,2018-08-16,Engineering,L1,Male,Remote,Hybrid,52909,51.5,3.5,6.6,23.0,0
+EMP-0672,2020-09-12,Engineering,L1,Male,New York,Hybrid,55712,52.7,3.8,8.2,18.3,0
+EMP-0673,2021-03-06,Sales,L3,Male,Remote,Remote,96977,22.7,4.0,4.0,10.1,0
+EMP-0674,2019-10-11,Sales,L1,Female,Austin,Remote,56722,54.7,2.8,3.5,20.1,1
+EMP-0675,2025-05-20,Support,L2,Male,Remote,Remote,71926,83.3,3.8,8.6,18.8,0
+EMP-0676,2024-07-06,Marketing,L3,Male,Chicago,Hybrid,93406,49.0,3.3,6.6,6.2,0
+EMP-0677,2020-08-27,Support,L2,Male,Remote,On-site,65454,66.4,4.4,6.3,23.8,1
+EMP-0678,2019-12-14,Finance,L1,Female,Chicago,On-site,55523,33.8,3.2,5.8,10.2,0
+EMP-0679,2018-12-19,Sales,L3,Male,Austin,On-site,101074,,3.8,5.0,22.7,0
+EMP-0680,2023-12-04,Finance,L2,Female,Remote,Hybrid,78258,46.7,3.6,9.2,1.4,0
+EMP-0681,2023-10-20,Marketing,L3,Female,Austin,Remote,91772,82.0,3.3,6.7,26.7,0
+EMP-0682,2023-12-29,Sales,L2,Female,New York,Remote,80853,50.8,2.5,5.0,12.8,0
+EMP-0683,2020-04-01,HR,L5,Female,New York,Hybrid,161924,26.2,4.3,7.0,5.5,1
+EMP-0684,2018-05-25,Marketing,L4,Female,Chicago,On-site,130665,77.5,4.5,6.1,20.9,0
+EMP-0685,2021-05-27,Engineering,L1,Female,Chicago,Hybrid,55198,58.5,3.3,4.2,19.7,0
+EMP-0686,2019-07-19,Engineering,L3,Female,Austin,Hybrid,93833,19.4,4.1,6.6,9.5,0
+EMP-0687,2018-03-03,Sales,L3,Female,Remote,Hybrid,105587,48.0,3.7,5.4,20.2,0
+EMP-0688,2018-11-09,HR,L1,Male,Chicago,Hybrid,53198,63.7,3.4,8.8,24.7,0
+EMP-0689,2021-07-30,Sales,L2,Female,San Francisco,On-site,84864,18.9,3.7,6.0,33.0,0
+EMP-0690,2019-08-05,Finance,L2,Male,Austin,Remote,63175,37.2,3.0,4.8,19.1,0
+EMP-0691,2023-07-22,Sales,L4,Male,San Francisco,Hybrid,109235,62.0,3.6,5.5,26.3,0
+EMP-0692,2020-12-11,Marketing,L2,Male,Chicago,On-site,81364,66.4,4.3,7.1,21.3,0
+EMP-0693,2023-12-31,Finance,L2,Non-binary,Remote,Remote,77188,16.3,3.1,4.3,20.7,0
+EMP-0694,2024-02-02,HR,L2,Female,San Francisco,On-site,71693,38.9,2.6,7.9,4.5,0
+EMP-0695,2023-03-11,Engineering,L2,Male,San Francisco,Remote,68445,12.7,4.0,6.4,12.6,0
+EMP-0696,2021-02-05,Support,L2,Male,New York,Hybrid,70504,52.5,3.9,8.1,19.6,1
+EMP-0697,2018-09-07,Support,L4,Female,New York,Hybrid,124977,40.3,4.9,7.0,19.1,0
+EMP-0698,2025-08-21,Marketing,L1,Male,New York,Hybrid,58630,43.3,2.7,7.2,6.1,0
+EMP-0699,2021-04-06,Sales,L5,Male,New York,Remote,149834,32.1,4.7,5.5,4.6,0
+EMP-0700,2022-04-10,Sales,L1,Female,New York,Hybrid,47570,42.4,4.9,4.1,36.1,0
+EMP-0701,2023-11-02,Engineering,L4,Female,Chicago,Hybrid,148086,44.6,2.5,5.3,18.7,0
+EMP-0702,2018-11-23,HR,L3,Male,Remote,Hybrid,93533,0,4.0,7.3,13.7,0
+EMP-0703,2025-06-20,HR,L4,Male,Remote,Hybrid,117053,83.4,3.9,5.5,4.0,0
+EMP-0704,2022-09-11,HR,L1,Male,Austin,Remote,53630,59.2,2.9,5.2,22.3,1
+EMP-0705,2019-06-07,Engineering,L2,Female,San Francisco,Hybrid,84181,14.5,3.2,7.9,6.3,0
+EMP-0706,2022-11-20,Engineering,L4,Non-binary,Remote,Hybrid,142925,70.8,3.6,4.5,16.1,1
+EMP-0707,2024-08-05,Support,L3,Male,San Francisco,Remote,91152,21.3,3.9,7.4,2.4,0
+EMP-0708,2020-05-12,Marketing,L2,Male,New York,Remote,76107,26.6,2.6,5.8,11.1,0
+EMP-0709,2020-08-06,HR,L2,Female,Remote,Hybrid,83837,55.8,3.9,7.7,17.3,0
+EMP-0710,2021-02-28,Marketing,L1,Female,Remote,Remote,63715,70.9,2.8,6.9,23.0,1
+EMP-0711,2025-07-02,HR,L2,Male,New York,Remote,65816,27.8,3.6,4.5,16.2,0
+EMP-0712,2018-06-07,Support,L3,Male,Chicago,On-site,96200,50.8,3.3,5.1,4.2,0
+EMP-0713,2020-03-12,Support,L1,Female,Remote,Remote,53692,30.0,2.7,6.8,31.6,0
+EMP-0714,2025-12-18,Support,L1,Male,Austin,Hybrid,50836,68.0,2.8,4.9,22.9,0
+EMP-0715,2025-01-24,Finance,L4,Female,Chicago,Hybrid,133703,65.3,3.2,6.4,28.6,0
+EMP-0716,2025-05-29,Marketing,L1,Male,New York,On-site,48720,34.2,2.8,7.1,20.6,0
+EMP-0717,2024-04-22,Engineering,L1,Male,Remote,Hybrid,59823,7.9,2.6,7.7,17.4,0
+EMP-0718,2020-04-24,Finance,L2,Male,Austin,Remote,82489,35.9,4.1,6.3,0,0
+EMP-0719,2018-07-21,Finance,L2,Male,Remote,Remote,78995,31.7,1.6,5.8,1.9,0
+EMP-0720,2018-03-24,Sales,L2,Female,San Francisco,Remote,79254,66.4,2.7,6.2,19.7,1
+EMP-0721,2021-01-10,Sales,L1,Female,Chicago,Remote,47782,60.1,2.2,5.1,38.3,0
+EMP-0722,2021-08-18,Engineering,L3,Male,Remote,On-site,105642,,3.6,7.0,18.0,0
+EMP-0723,2025-11-18,Sales,L1,Non-binary,Austin,Hybrid,62472,0,4.4,7.5,16.9,0
+EMP-0724,2019-03-23,Support,L1,Female,Austin,Hybrid,55178,67.0,1.6,8.1,39.5,0
+EMP-0725,2020-08-10,Engineering,L3,Male,Chicago,Hybrid,94568,37.5,4.0,5.9,21.3,1
+EMP-0726,2025-04-24,Support,L3,Female,Austin,Remote,89724,38.2,2.8,7.3,21.8,0
+EMP-0727,2022-11-28,Sales,L3,Male,Chicago,Remote,85724,33.0,3.7,2.9,23.3,0
+EMP-0728,2023-11-11,Sales,L2,Male,Remote,Hybrid,72563,22.9,3.9,4.3,21.0,0
+EMP-0729,2019-07-09,Marketing,L1,Male,Remote,On-site,50381,46.5,3.0,7.0,14.4,0
+EMP-0730,2023-04-04,Engineering,L3,Female,San Francisco,Remote,108140,30.3,3.3,7.7,9.2,0
+EMP-0731,2024-01-26,Support,L2,Female,San Francisco,Remote,83023,56.2,3.5,6.5,29.7,0
+EMP-0732,2021-02-09,Support,L3,Male,Remote,Hybrid,108453,9.0,2.6,7.7,22.1,0
+EMP-0733,2018-08-02,Support,L1,Male,New York,Remote,49488,14.8,3.4,6.0,22.0,0
+EMP-0734,2024-10-15,Sales,L2,Male,Austin,Hybrid,69009,84.2,2.9,6.2,11.2,0
+EMP-0735,2022-02-06,Support,L2,Male,San Francisco,Remote,77272,31.9,3.8,8.9,6.2,0
+EMP-0736,2024-07-29,HR,L5,Male,San Francisco,Remote,160341,86.5,3.2,7.8,12.5,0
+EMP-0737,2024-06-01,Sales,L5,Female,San Francisco,Remote,141994,112.8,3.0,3.6,22.7,0
+EMP-0738,2019-12-26,Finance,L1,Male,Remote,Remote,49313,50.6,2.8,6.4,5.3,0
+EMP-0739,2021-07-20,Finance,L3,Female,San Francisco,Hybrid,105242,80.1,3.4,8.8,13.1,0
+EMP-0740,2019-12-08,Engineering,L1,Female,New York,Remote,62770,36.5,2.5,8.5,0,0
+EMP-0741,2018-12-28,Engineering,L2,Female,New York,On-site,75140,61.5,3.6,7.5,43.2,0
+EMP-0742,2020-02-22,Finance,L5,Male,Chicago,On-site,148698,31.9,4.2,5.4,8.7,0
+EMP-0743,2021-12-25,Engineering,L5,Male,Austin,Remote,193290,4.1,3.7,8.3,29.2,0
+EMP-0744,2021-03-28,Marketing,L5,Male,Chicago,Hybrid,153595,72.3,3.8,6.5,21.5,0
+EMP-0745,2023-03-29,Sales,L4,Female,Chicago,Hybrid,129167,23.9,4.3,4.6,8.6,1
+EMP-0746,2021-06-08,Marketing,L2,Female,New York,On-site,67332,46.8,3.4,4.9,14.8,0
+EMP-0747,2021-05-14,Finance,L1,Male,San Francisco,Hybrid,46314,71.8,2.4,5.2,11.6,0
+EMP-0748,2025-10-28,Sales,L1,Female,Remote,On-site,62173,81.2,2.9,3.4,44.0,1
+EMP-0749,2019-08-28,Finance,L4,Male,New York,Remote,121133,42.1,3.9,6.9,15.3,0
+EMP-0750,2025-09-14,Finance,L2,Male,San Francisco,Hybrid,74912,72.9,2.8,6.1,0,1
+EMP-0751,2022-10-06,Finance,L1,Female,Remote,On-site,64560,67.9,3.4,5.9,9.1,0
+EMP-0752,2018-11-13,Sales,L2,Female,Chicago,Hybrid,83154,38.4,3.3,6.4,27.4,1
+EMP-0753,2020-01-06,Sales,L3,Female,San Francisco,On-site,87358,34.6,3.5,3.9,35.4,0
+EMP-0754,2018-02-17,Finance,L1,Male,Austin,Hybrid,60929,33.9,2.5,4.6,18.0,0
+EMP-0755,2022-02-03,HR,L2,Female,Chicago,On-site,65659,71.9,3.2,6.3,7.9,0
+EMP-0756,2018-07-18,Support,L1,Female,Chicago,Hybrid,60229,63.4,3.6,8.3,12.2,0
+EMP-0757,2018-03-13,Sales,L4,Female,New York,Remote,137279,25.6,3.1,7.4,25.7,1
+EMP-0758,2023-02-20,Engineering,L3,Female,Austin,Remote,116259,87.0,2.7,6.3,11.0,1
+EMP-0759,2018-11-19,Support,L3,Female,New York,Hybrid,93068,44.9,2.9,7.7,19.6,0
+EMP-0760,2021-05-26,Finance,L2,Male,New York,Remote,82171,55.0,2.9,5.6,18.4,0
+EMP-0761,2020-01-13,Support,L3,Male,Chicago,Hybrid,104223,60.0,3.5,6.1,15.3,0
+EMP-0762,2024-11-09,Support,L1,Male,Chicago,Remote,54431,26.1,2.7,5.3,15.0,0
+EMP-0763,2023-08-06,Sales,L2,Female,New York,On-site,68902,55.5,3.8,4.2,11.0,0
+EMP-0764,2021-07-15,HR,L1,Female,Austin,Remote,59794,75.3,3.3,5.8,18.8,1
+EMP-0765,2019-06-24,HR,L2,Female,San Francisco,On-site,74400,50.8,3.1,8.5,11.5,0
+EMP-0766,2022-09-09,Finance,L3,Male,San Francisco,Hybrid,101636,49.0,2.7,5.9,1.6,0
+EMP-0767,2023-01-15,Marketing,L1,Male,Remote,Remote,50143,53.0,3.5,5.9,19.7,0
+EMP-0768,2024-12-09,Sales,L3,Non-binary,San Francisco,Hybrid,89346,0,2.0,4.8,0,1
+EMP-0769,2025-05-03,Marketing,L2,Male,San Francisco,Hybrid,74757,73.0,2.4,4.8,24.0,0
+EMP-0770,2023-03-04,HR,L2,Male,Remote,Remote,77046,0,2.2,8.3,10.4,0
+EMP-0771,2018-01-29,Sales,L4,Male,Austin,On-site,110118,22.8,4.1,3.4,33.5,0
+EMP-0772,2022-12-02,Marketing,L3,Female,Remote,Hybrid,97755,82.4,3.9,6.6,9.7,0
+EMP-0773,2024-07-02,Support,L2,Female,New York,On-site,65662,23.5,4.0,6.8,33.5,0
+EMP-0774,2021-11-03,Support,L2,Female,Remote,Hybrid,71676,33.3,3.9,6.6,24.7,0
+EMP-0775,2019-10-11,Engineering,L4,Female,Chicago,Remote,140451,34.9,4.7,7.4,17.3,0
+EMP-0776,2023-09-15,Engineering,L1,Male,Austin,Remote,67545,54.7,3.6,7.4,6.4,0
+EMP-0777,2018-02-28,Marketing,L1,Female,New York,On-site,47121,39.3,3.5,7.1,0,0
+EMP-0778,2023-11-17,Marketing,L4,Female,Remote,On-site,122966,41.3,3.8,8.3,9.2,0
+EMP-0779,2023-11-12,Finance,L2,Male,Remote,Hybrid,70125,49.1,2.9,7.3,7.5,0
+EMP-0780,2018-09-18,HR,L1,Male,Chicago,Hybrid,49343,59.7,3.3,5.3,7.6,0
+EMP-0781,2020-03-19,Sales,L3,Male,New York,Remote,85272,50.5,4.2,2.8,12.2,0
+EMP-0782,2018-01-03,Finance,L1,Female,Chicago,Hybrid,53249,24.4,2.7,5.0,11.6,0
+EMP-0783,2022-12-08,Finance,L1,Male,Austin,Remote,48652,69.0,2.9,8.3,10.6,1
+EMP-0784,2024-01-16,Marketing,L2,Female,Austin,Hybrid,67985,57.4,3.6,5.9,24.8,0
+EMP-0785,2022-06-11,HR,L1,Female,San Francisco,Remote,50628,35.1,2.9,8.7,10.6,0
+EMP-0786,2019-08-17,Sales,L5,Male,Remote,Remote,160069,22.9,4.7,4.0,26.5,0
+EMP-0787,2021-01-28,Sales,L5,Male,Remote,On-site,141276,54.6,4.7,5.4,20.1,0
+EMP-0788,2021-01-27,Marketing,L3,Female,Chicago,Hybrid,85500,63.8,4.3,3.8,1.1,0
+EMP-0789,2024-07-28,Sales,L5,Female,San Francisco,On-site,164577,63.9,4.1,4.1,25.1,0
+EMP-0790,2024-08-12,Engineering,L5,Female,Remote,On-site,176725,26.8,4.1,5.7,3.4,0
+EMP-0791,2022-01-19,Engineering,L3,Female,Chicago,Hybrid,117469,54.9,4.1,5.7,22.4,0
+EMP-0792,2023-06-16,Support,L1,Male,San Francisco,Remote,46573,106.8,3.8,2.5,8.8,0
+EMP-0793,2018-11-06,Sales,L2,Male,San Francisco,Remote,80523,35.0,3.2,2.5,20.3,0
+EMP-0794,2023-03-23,Support,L1,Male,Chicago,On-site,59787,57.6,3.1,7.5,33.9,0
+EMP-0795,2024-12-29,Support,L5,Female,San Francisco,Remote,165555,,4.0,8.2,24.5,0
+EMP-0796,2024-06-20,Support,L3,Female,San Francisco,On-site,87000,77.5,3.8,7.7,0,1
+EMP-0797,2020-04-06,Sales,L1,Female,Remote,Hybrid,54926,34.0,3.5,5.1,22.3,0
+EMP-0798,2020-05-04,Engineering,L5,Male,Remote,On-site,173988,39.9,4.2,9.0,27.0,0
+EMP-0799,2022-01-07,Marketing,L1,Male,Remote,Hybrid,55383,86.0,3.2,7.3,2.6,1
+EMP-0800,2021-06-23,Sales,L2,Non-binary,New York,Remote,64139,48.6,3.6,4.2,34.4,0
+EMP-0801,2020-10-16,HR,L1,Female,San Francisco,Remote,50811,61.0,3.3,7.3,12.2,0
+EMP-0802,2023-10-26,Support,L2,Male,New York,Remote,66960,37.2,3.4,5.9,26.6,0
+EMP-0803,2021-09-20,Support,L4,Male,San Francisco,On-site,109867,53.3,4.9,7.3,31.3,0
+EMP-0804,2019-04-06,Engineering,L1,Female,New York,On-site,66430,51.2,3.6,5.8,12.1,0
+EMP-0805,2019-01-30,Sales,L2,Female,Remote,Hybrid,77656,44.2,3.7,3.6,4.0,0
+EMP-0806,2020-10-23,Support,L3,Male,Chicago,Remote,88049,41.3,3.2,8.8,11.8,0
+EMP-0807,2018-05-21,HR,L2,Male,New York,Hybrid,74616,30.7,3.8,,0,0
+EMP-0808,2020-02-09,Sales,L2,Male,Austin,On-site,82601,67.1,3.2,4.2,24.3,0
+EMP-0809,2021-10-28,Support,L2,Male,Remote,Remote,77969,35.5,3.4,6.8,14.2,0
+EMP-0810,2019-05-08,Engineering,L2,Male,Remote,On-site,89743,31.1,3.8,10.0,4.3,0
+EMP-0811,2018-03-10,Finance,L4,Female,New York,Hybrid,121020,26.9,4.3,7.8,4.5,0
+EMP-0812,2019-11-10,Sales,L5,Female,San Francisco,Remote,154828,45.1,3.6,3.1,9.4,0
+EMP-0813,2023-04-01,HR,L2,Female,Remote,On-site,72548,45.5,3.3,5.6,9.6,0
+EMP-0814,2020-09-20,HR,L1,Male,New York,On-site,57820,31.7,2.6,7.0,9.4,0
+EMP-0815,2022-12-22,HR,L1,Female,Remote,Remote,49666,45.2,3.0,6.5,15.5,0
+EMP-0816,2018-10-16,Support,L2,Male,Chicago,Hybrid,73186,51.0,3.2,6.6,36.0,0
+EMP-0817,2018-12-29,Support,L4,Female,San Francisco,Hybrid,131760,60.1,3.1,6.3,23.4,0
+EMP-0818,2025-06-24,Finance,L3,Female,Chicago,Remote,109403,42.8,3.6,4.8,13.0,0
+EMP-0819,2024-05-05,Sales,L5,Female,Austin,Hybrid,164629,67.4,3.3,7.3,34.0,1
+EMP-0820,2024-10-09,Engineering,L5,Male,Austin,Hybrid,189695,75.8,4.1,4.0,15.9,0
+EMP-0821,2020-01-11,Finance,L3,Male,Remote,Remote,82791,36.3,3.9,8.2,13.6,0
+EMP-0822,2021-08-22,Support,L2,Non-binary,San Francisco,On-site,77014,20.1,2.5,4.1,14.8,0
+EMP-0823,2021-12-11,Finance,L3,Male,Austin,Remote,102198,64.4,2.0,5.6,28.6,0
+EMP-0824,2023-06-12,Support,L3,Female,New York,On-site,93488,25.7,3.7,6.8,23.6,0
+EMP-0825,2024-12-08,Marketing,L3,Male,Austin,Remote,104794,73.9,4.0,5.3,0,0
+EMP-0826,2021-04-18,Sales,L1,Male,Remote,Hybrid,63681,38.0,3.5,5.2,27.8,1
+EMP-0827,2020-06-03,Sales,L3,Male,Remote,Hybrid,86763,,3.5,5.5,27.4,0
+EMP-0828,2022-05-05,Sales,L4,Female,Chicago,On-site,125137,25.6,4.8,4.9,7.3,0
+EMP-0829,2020-10-08,Sales,L5,Male,Remote,On-site,175276,79.4,5.0,7.0,18.8,0
+EMP-0830,2020-07-06,Sales,L2,Female,Remote,On-site,77246,18.7,3.6,3.9,18.9,1
+EMP-0831,2018-09-19,Marketing,L3,Female,Austin,Hybrid,104348,40.6,4.0,6.4,13.5,0
+EMP-0832,2025-10-26,Finance,L1,Male,Chicago,Remote,54983,41.9,2.0,5.5,18.1,0
+EMP-0833,2018-10-18,Engineering,L3,Female,San Francisco,Remote,107869,66.6,3.7,7.5,15.6,1
+EMP-0834,2025-11-11,HR,L3,Male,New York,Hybrid,104457,0,2.7,7.9,10.0,0
+EMP-0835,2025-04-05,Finance,L2,Male,San Francisco,Remote,82742,53.2,3.0,6.9,14.1,0
+EMP-0836,2021-06-08,Engineering,L1,Non-binary,New York,Remote,51873,39.6,2.9,7.1,5.9,0
+EMP-0837,2022-12-11,Engineering,L3,Male,San Francisco,Remote,119298,25.5,2.4,6.6,0,0
+EMP-0838,2024-08-14,Engineering,L5,Female,New York,Hybrid,185590,9.3,4.0,7.5,7.4,0
+EMP-0839,2019-08-03,Finance,L5,Female,New York,Remote,155692,65.7,2.8,6.8,33.2,0
+EMP-0840,2025-05-06,Support,L3,Female,Remote,Remote,92503,67.5,2.6,5.9,22.6,1
+EMP-0841,2023-07-02,Finance,L2,Female,San Francisco,Remote,62780,13.4,3.0,8.2,0,0
+EMP-0842,2024-05-28,Engineering,L4,Male,New York,On-site,153239,45.6,3.8,6.8,6.4,0
+EMP-0843,2025-08-21,Support,L2,Female,Remote,Hybrid,84910,58.6,3.4,8.2,23.6,0
+EMP-0844,2019-04-22,Support,L3,Male,San Francisco,On-site,91517,,4.0,7.7,4.6,0
+EMP-0845,2020-10-05,Finance,L2,Female,New York,Remote,82373,62.0,2.9,8.0,3.5,0
+EMP-0846,2021-02-13,Support,L1,Female,San Francisco,Hybrid,51209,15.3,3.2,5.0,31.4,0
+EMP-0847,2020-01-22,Sales,L3,Male,Remote,Hybrid,99594,60.9,3.3,6.5,17.7,0
+EMP-0848,2018-12-21,Support,L1,Male,Remote,On-site,63178,53.1,3.8,6.0,22.6,0
+EMP-0849,2019-08-08,Engineering,L3,Male,Austin,Remote,107068,79.3,3.1,7.0,18.8,0
+EMP-0850,2025-03-23,Sales,L5,Female,San Francisco,Remote,143698,55.5,4.3,5.6,28.0,0
+EMP-0851,2019-08-11,Finance,L1,Male,Austin,Hybrid,62928,76.3,3.4,4.8,9.6,0
+EMP-0852,2024-04-23,Sales,L1,Male,San Francisco,Remote,46914,46.3,2.8,4.0,12.7,0
+EMP-0853,2023-01-16,HR,L5,Female,San Francisco,Hybrid,155575,29.6,3.5,3.7,17.0,0
+EMP-0854,2020-11-19,Sales,L1,Female,New York,On-site,50253,84.5,3.2,3.1,25.9,1
+EMP-0855,2022-09-08,Sales,L4,Male,Remote,Hybrid,138184,24.5,3.9,4.6,31.0,0
+EMP-0856,2024-12-09,Engineering,L1,Male,Remote,Hybrid,64877,47.0,2.5,6.9,16.3,0
+EMP-0857,2020-06-08,Sales,L4,Female,Chicago,Remote,130130,57.0,4.2,5.8,31.8,0
+EMP-0858,2022-07-05,Support,L1,Female,Austin,Remote,63843,52.3,3.7,7.2,18.1,0
+EMP-0859,2018-09-25,HR,L3,Female,Remote,Hybrid,84809,,4.6,5.3,27.6,0
+EMP-0860,2023-01-04,HR,L2,Male,Chicago,Remote,77567,72.3,3.5,7.8,20.9,1
+EMP-0861,2021-02-25,HR,L2,Female,Chicago,Hybrid,84608,83.3,3.3,7.4,15.0,0
+EMP-0862,2022-01-24,Marketing,L2,Female,Austin,On-site,76448,39.6,3.8,9.4,21.8,0
+EMP-0863,2019-09-05,HR,L1,Male,San Francisco,Remote,48636,35.6,3.3,4.7,6.6,1
+EMP-0864,2019-11-24,Support,L3,Male,Remote,Hybrid,93967,76.3,3.7,7.8,32.0,1
+EMP-0865,2025-05-13,Sales,L2,Male,Austin,Remote,77010,32.1,3.2,5.5,23.3,0
+EMP-0866,2022-03-17,Engineering,L2,Male,Chicago,Remote,79325,43.6,3.9,6.6,17.0,0
+EMP-0867,2021-07-29,Sales,L1,Male,Chicago,On-site,61672,60.0,3.4,5.3,22.3,0
+EMP-0868,2021-10-29,Sales,L1,Male,Chicago,Hybrid,47306,58.7,2.2,3.2,34.3,1
+EMP-0869,2019-01-11,Support,L1,Female,New York,Remote,45125,17.4,2.9,5.8,11.4,0
+EMP-0870,2024-08-21,Support,L2,Female,Austin,Hybrid,64007,65.1,3.1,6.7,20.3,0
+EMP-0871,2020-07-21,Engineering,L3,Male,Remote,Hybrid,95134,90.0,3.3,8.1,13.2,0
+EMP-0872,2018-09-10,Engineering,L4,Female,San Francisco,Remote,123257,61.4,4.6,7.6,4.1,0
+EMP-0873,2024-10-16,Support,L2,Female,Remote,Hybrid,84223,3.2,2.4,5.7,10.5,0
+EMP-0874,2025-09-30,Marketing,L2,Female,San Francisco,Remote,73563,76.2,3.7,5.9,19.7,0
+EMP-0875,2021-07-21,Engineering,L3,Male,Remote,On-site,108577,37.5,3.4,6.8,9.4,0
+EMP-0876,2022-05-26,Engineering,L2,Male,San Francisco,Remote,72585,33.5,2.9,6.4,10.6,0
+EMP-0877,2023-05-07,HR,L1,Non-binary,New York,Remote,64916,21.9,3.2,10.0,10.9,1
+EMP-0878,2021-02-28,Support,L3,Male,New York,Remote,93177,46.8,3.9,4.1,25.5,0
+EMP-0879,2023-05-05,Engineering,L2,Male,Remote,Remote,78702,43.5,3.1,7.5,7.1,0
+EMP-0880,2018-03-21,Support,L1,Female,Austin,Hybrid,55271,73.0,3.9,8.0,32.1,0
+EMP-0881,2021-02-05,HR,L1,Male,Remote,On-site,49688,57.5,3.2,5.1,19.5,0
+EMP-0882,2020-03-30,Finance,L5,Female,San Francisco,On-site,152333,45.4,3.7,6.3,11.5,0
+EMP-0883,2019-08-14,Finance,L2,Female,New York,Remote,71702,,2.9,6.7,8.8,0
+EMP-0884,2019-03-18,Engineering,L3,Female,Austin,Hybrid,99658,30.9,3.2,6.6,13.3,0
+EMP-0885,2022-11-14,Marketing,L1,Female,San Francisco,Remote,55613,25.6,4.1,6.3,22.1,0
+EMP-0886,2019-09-13,Engineering,L3,Male,New York,Remote,94079,48.5,4.5,5.9,19.0,0
+EMP-0887,2019-01-02,Marketing,L2,Female,San Francisco,Remote,68791,81.3,4.2,6.8,23.5,1
+EMP-0888,2019-09-18,Finance,L1,Male,New York,Remote,49511,28.7,4.0,9.1,13.6,0
+EMP-0889,2024-07-14,Support,L2,Male,Austin,Remote,78104,,3.1,4.9,26.8,0
+EMP-0890,2019-10-17,HR,L3,Male,Austin,Hybrid,109355,37.2,3.1,5.9,11.7,1
+EMP-0891,2018-06-20,Support,L3,Female,San Francisco,Remote,94696,56.1,3.4,3.9,7.0,0
+EMP-0892,2024-05-10,HR,L4,Male,New York,Hybrid,124536,29.4,3.8,6.7,15.5,0
+EMP-0893,2024-04-16,Sales,L5,Female,New York,Hybrid,179107,33.5,5.0,5.0,6.5,0
+EMP-0894,2024-05-15,Finance,L5,Female,San Francisco,Remote,150452,14.5,3.3,8.2,11.6,0
+EMP-0895,2020-04-18,Sales,L1,Male,New York,Hybrid,48942,23.8,3.1,3.1,32.3,1
+EMP-0896,2025-11-18,Sales,L4,Female,Austin,Remote,144911,34.5,3.7,4.4,20.9,0
+EMP-0897,2021-02-24,Sales,L5,Female,New York,Remote,158452,40.1,4.0,6.3,28.3,0
+EMP-0898,2025-11-19,HR,L1,Female,Remote,Hybrid,61008,41.7,2.9,4.4,18.5,0
+EMP-0899,2025-03-03,Sales,L4,Female,Austin,Remote,130727,56.1,3.2,4.5,22.6,0
+EMP-0900,2019-07-18,Support,L2,Non-binary,New York,Remote,72905,32.6,2.9,5.5,13.1,0
+EMP-0901,2024-06-07,HR,L1,Male,Chicago,Hybrid,49571,3.2,3.4,4.2,19.3,0
+EMP-0902,2020-07-17,Marketing,L2,Male,Austin,On-site,84413,4.4,3.1,7.3,14.9,0
+EMP-0903,2020-07-13,Sales,L2,Female,Chicago,On-site,82986,18.5,3.8,7.0,17.5,0
+EMP-0904,2021-05-25,Marketing,L4,Female,San Francisco,Hybrid,121713,0,4.6,8.2,16.0,0
+EMP-0905,2022-07-09,Engineering,L1,Non-binary,Austin,Remote,50777,47.2,2.8,7.3,4.3,1
+EMP-0906,2022-04-21,Marketing,L1,Male,New York,Hybrid,62662,31.6,2.4,7.6,23.5,0
+EMP-0907,2020-10-02,HR,L3,Male,San Francisco,Remote,105733,34.5,3.3,6.2,6.3,0
+EMP-0908,2025-09-01,Marketing,L3,Male,Chicago,Remote,86206,70.5,3.4,6.4,16.6,0
+EMP-0909,2023-10-18,Finance,L2,Female,San Francisco,Remote,78092,50.9,2.2,7.5,5.2,0
+EMP-0910,2025-05-02,Engineering,L2,Male,San Francisco,Hybrid,76412,31.2,3.5,7.9,15.3,0
+EMP-0911,2024-04-24,HR,L1,Male,Chicago,On-site,45775,31.9,2.5,8.3,0,1
+EMP-0912,2020-12-12,Marketing,L1,Female,Austin,Remote,56719,39.7,2.7,6.7,13.1,1
+EMP-0913,2025-05-12,Engineering,L3,Female,Austin,Hybrid,97609,48.7,3.9,6.9,11.8,0
+EMP-0914,2019-07-16,Engineering,L2,Male,Austin,Remote,82766,23.1,3.4,5.8,8.4,0
+EMP-0915,2018-10-06,Marketing,L4,Male,New York,Hybrid,139305,46.3,4.5,6.6,12.3,0
+EMP-0916,2018-04-24,Sales,L1,Male,Remote,On-site,51311,2.9,3.6,4.6,33.1,0
+EMP-0917,2024-09-19,Finance,L4,Female,Remote,Remote,142161,17.9,3.8,5.2,15.1,0
+EMP-0918,2021-10-30,Support,L2,Male,Austin,On-site,71944,48.8,2.2,4.8,10.6,0
+EMP-0919,2019-07-17,Support,L2,Female,Austin,On-site,77378,49.8,2.7,3.1,19.3,0
+EMP-0920,2020-09-07,Finance,L3,Male,Remote,Remote,100547,39.7,3.9,6.5,9.1,0
+EMP-0921,2020-02-18,Engineering,L3,Female,Remote,Hybrid,116910,29.1,3.1,6.4,8.0,0
+EMP-0922,2023-07-29,Sales,L3,Female,San Francisco,On-site,94287,43.6,3.0,5.3,16.5,0
+EMP-0923,2020-11-09,HR,L4,Non-binary,New York,Remote,140443,42.1,4.5,6.6,7.1,0
+EMP-0924,2020-01-12,HR,L3,Male,San Francisco,Remote,86027,39.0,3.6,6.3,10.3,0
+EMP-0925,2018-02-10,HR,L3,Male,Remote,Hybrid,85651,72.3,3.2,5.9,13.4,0
+EMP-0926,2020-06-19,Marketing,L4,Male,Austin,Remote,119261,75.3,3.9,5.9,15.4,0
+EMP-0927,2023-02-26,Sales,L2,Male,Remote,Remote,81975,42.3,3.5,6.1,22.6,0
+EMP-0928,2022-12-18,Sales,L1,Male,New York,Hybrid,49927,63.8,2.5,6.5,14.3,0
+EMP-0929,2022-12-17,Finance,L2,Male,Austin,Hybrid,81875,40.5,3.4,7.1,10.0,0
+EMP-0930,2023-04-08,Sales,L1,Female,Remote,Remote,45795,32.8,2.3,4.4,21.5,0
+EMP-0931,2021-11-27,Engineering,L2,Male,Austin,Hybrid,74833,40.5,3.3,7.5,3.7,0
+EMP-0932,2019-10-13,Engineering,L2,Male,San Francisco,Hybrid,72280,31.4,3.3,8.4,14.6,0
+EMP-0933,2024-12-18,Engineering,L2,Male,New York,On-site,70541,54.8,4.1,4.7,9.9,0
+EMP-0934,2021-01-07,Engineering,L5,Female,New York,Hybrid,167399,69.1,3.4,6.3,7.0,0
+EMP-0935,2022-06-02,Engineering,L1,Female,Austin,On-site,52718,42.0,3.4,5.8,2.6,0
+EMP-0936,2022-03-26,Support,L3,Male,Chicago,Remote,86453,,4.3,7.3,7.7,0
+EMP-0937,2024-10-16,Sales,L2,Non-binary,Remote,Remote,80922,44.8,2.3,3.8,28.5,0
+EMP-0938,2022-08-17,Engineering,L3,Male,San Francisco,Hybrid,102816,39.2,3.9,,1.5,0
+EMP-0939,2018-03-09,Finance,L3,Female,San Francisco,Remote,89440,57.4,3.5,8.1,8.3,0
+EMP-0940,2021-12-06,Sales,L1,Female,New York,Remote,60240,55.8,4.0,3.3,16.9,1
+EMP-0941,2023-09-07,HR,L4,Male,San Francisco,Remote,118875,,4.8,6.6,1.7,0
+EMP-0942,2021-11-22,Support,L2,Male,San Francisco,Hybrid,82374,18.3,4.1,8.5,10.7,0
+EMP-0943,2019-09-21,Support,L2,Female,Austin,On-site,74383,37.1,2.4,8.2,35.3,0
+EMP-0944,2022-09-10,Sales,L1,Male,New York,Remote,63654,58.9,1.9,1.3,9.3,0
+EMP-0945,2019-11-10,Engineering,L1,Female,Remote,Remote,64927,52.6,2.6,5.6,18.5,0
+EMP-0946,2019-09-30,Marketing,L4,Female,Chicago,Remote,142081,58.2,2.7,7.3,4.2,0
+EMP-0947,2020-11-21,Sales,L5,Non-binary,New York,Hybrid,146979,5.1,3.5,6.7,19.0,1
+EMP-0948,2018-11-29,Marketing,L2,Female,San Francisco,Remote,69946,0,3.5,5.6,27.4,0
+EMP-0949,2020-08-23,Engineering,L2,Male,Remote,Remote,88691,73.3,3.1,7.4,6.7,0
+EMP-0950,2018-02-04,Engineering,L2,Male,New York,Remote,73877,93.7,4.2,4.1,40.9,1
+EMP-0951,2024-05-31,HR,L2,Female,Remote,Remote,64867,60.4,3.0,3.1,0.1,0
+EMP-0952,2024-08-27,Engineering,L1,Male,Remote,Remote,60633,53.8,2.7,5.8,8.2,0
+EMP-0953,2025-06-16,Engineering,L3,Female,New York,On-site,97769,28.4,4.1,6.3,4.2,0
+EMP-0954,2019-09-28,HR,L2,Male,San Francisco,Remote,63205,35.6,3.1,5.9,13.4,0
+EMP-0955,2025-03-24,Support,L2,Female,Austin,Remote,83897,17.3,3.0,7.1,33.0,0
+EMP-0956,2020-02-04,Engineering,L1,Male,Remote,Remote,67211,54.2,1.9,7.6,0,0
+EMP-0957,2019-11-04,HR,L3,Female,New York,On-site,90211,0,3.6,7.5,8.1,0
+EMP-0958,2025-12-23,HR,L3,Male,Remote,Hybrid,93238,43.9,3.5,7.4,3.6,0
+EMP-0959,2024-08-15,Support,L3,Female,Austin,On-site,102069,57.4,4.5,10.0,28.3,0
+EMP-0960,2018-09-15,HR,L2,Male,New York,Hybrid,77548,23.7,3.6,3.8,4.1,1
+EMP-0961,2024-07-01,Sales,L4,Female,Remote,Hybrid,124655,60.9,3.7,5.6,40.2,1
+EMP-0962,2025-03-06,Finance,L2,Female,Remote,Remote,72033,31.6,2.7,5.0,9.8,0
+EMP-0963,2018-02-28,HR,L2,Female,New York,Hybrid,84448,37.2,3.7,9.3,22.8,0
+EMP-0964,2022-01-20,Sales,L1,Male,Austin,Hybrid,48198,26.4,5.0,4.8,18.9,1
+EMP-0965,2021-01-11,HR,L5,Male,Remote,Hybrid,151729,34.3,4.0,7.0,3.2,0
+EMP-0966,2020-02-15,Sales,L1,Female,San Francisco,Remote,62868,37.5,1.8,7.5,18.7,1
+EMP-0967,2025-01-30,Sales,L2,Female,New York,On-site,73514,,3.9,3.2,28.1,1
+EMP-0968,2020-07-17,Support,L2,Female,Chicago,On-site,83529,9.4,3.4,4.9,17.8,1
+EMP-0969,2021-10-19,Engineering,L2,Male,Chicago,Remote,85065,,3.8,6.0,13.0,0
+EMP-0970,2021-10-27,Finance,L3,Male,Austin,Hybrid,85924,85.9,3.7,5.7,25.8,0
+EMP-0971,2022-04-04,Engineering,L2,Non-binary,New York,Remote,72245,104.4,3.1,4.4,12.1,1
+EMP-0972,2024-09-21,Sales,L1,Male,New York,Hybrid,48280,59.2,3.4,5.9,17.9,0
+EMP-0973,2018-11-23,Sales,L1,Female,Austin,Hybrid,62987,64.0,2.6,4.8,18.1,0
+EMP-0974,2019-07-15,Sales,L4,Male,San Francisco,Hybrid,112505,46.9,3.7,7.7,26.8,1
+EMP-0975,2020-01-29,Engineering,L5,Female,San Francisco,Remote,198577,54.5,3.3,8.3,21.4,0
+EMP-0976,2020-02-08,Sales,L2,Female,Remote,Hybrid,78143,59.1,3.5,5.8,33.5,0
+EMP-0977,2019-05-26,Support,L4,Male,San Francisco,On-site,135539,44.1,3.7,4.7,13.1,0
+EMP-0978,2020-08-03,Finance,L3,Non-binary,San Francisco,Hybrid,90191,41.1,2.6,7.4,31.8,0
+EMP-0979,2019-08-15,Support,L4,Male,New York,Remote,117632,54.8,2.5,5.0,29.8,0
+EMP-0980,2025-06-05,Engineering,L3,Male,San Francisco,On-site,98859,29.5,3.7,8.0,23.7,0
+EMP-0981,2019-12-27,Marketing,L1,Male,San Francisco,Remote,58964,8.2,3.3,5.6,13.9,0
+EMP-0982,2022-11-30,Finance,L4,Non-binary,San Francisco,Hybrid,116748,,3.8,8.3,21.1,0
+EMP-0983,2021-06-24,Support,L2,Female,San Francisco,Hybrid,75228,,3.1,7.5,17.1,0
+EMP-0984,2023-12-11,Finance,L3,Female,Chicago,On-site,87994,46.8,3.5,5.7,22.8,0
+EMP-0985,2020-10-25,Engineering,L1,Male,San Francisco,Hybrid,59765,18.0,1.8,5.8,18.1,0
+EMP-0986,2023-07-13,Sales,L4,Male,Remote,Hybrid,122914,13.9,3.3,6.0,17.6,0
+EMP-0987,2022-12-13,Sales,L5,Male,Chicago,On-site,148894,49.7,4.5,7.1,23.0,0
+EMP-0988,2019-05-02,Support,L2,Male,San Francisco,Remote,65064,52.0,2.6,6.7,19.0,0
+EMP-0989,2020-06-05,Support,L3,Male,Remote,On-site,108074,40.4,3.7,7.7,18.3,0
+EMP-0990,2025-01-13,Sales,L2,Female,New York,Remote,80733,,3.2,6.0,20.7,1
+EMP-0991,2019-04-28,Engineering,L2,Female,San Francisco,Remote,74642,9.4,3.4,4.0,6.2,0
+EMP-0992,2018-12-14,Engineering,L1,Male,Remote,Hybrid,53732,6.5,3.4,7.3,11.0,0
+EMP-0993,2023-01-30,HR,L5,Female,Remote,On-site,150315,71.5,3.2,5.6,7.3,0
+EMP-0994,2020-03-14,Sales,L3,Female,Remote,On-site,95297,49.3,3.6,3.7,6.4,1
+EMP-0995,2025-04-14,Support,L2,Female,Austin,Remote,81027,25.8,3.4,6.3,34.7,1
+EMP-0996,2023-11-21,Finance,L2,Male,Austin,Remote,79614,17.3,3.2,8.5,20.9,1
+EMP-0997,2022-09-26,Finance,L3,Male,New York,Hybrid,105623,52.0,4.4,7.8,1.5,1
+EMP-0998,2018-05-05,Engineering,L1,Female,New York,On-site,51666,0,3.4,5.0,19.2,0
+EMP-0999,2019-09-06,Marketing,L2,Female,Chicago,Hybrid,73578,95.7,2.8,4.5,10.4,0
+EMP-1000,2018-11-10,Engineering,L3,Female,San Francisco,Hybrid,92808,62.7,2.4,6.7,2.7,1

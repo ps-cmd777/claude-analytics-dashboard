@@ -184,6 +184,8 @@ claude-analytics-dashboard/
 
 This project was built using [Claude Code](https://claude.ai/code) and the Claude Design System as AI pair-programming tools. Claude helped with architecture decisions, code generation, design system creation, and security review — while all product decisions, prompting strategy, and project direction were driven by me.
 
+The most interesting design decision was a deliberate split of responsibility: Claude owns domain knowledge (recognising what kind of data is uploaded, selecting relevant charts, writing findings), while deterministic Python owns structural validation (which columns can be summed vs averaged, what aggregations are safe). This made the system work across any domain — HR, finance, e-commerce — without hardcoding any domain-specific logic.
+
 This reflects how modern data professionals work: using AI as a force multiplier, not a replacement for domain expertise.
 
 ---
