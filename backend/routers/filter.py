@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel, Field
-from typing import Dict, Optional
+from typing import Dict
 
 from rate_limit import limiter
 from models.schemas import DataProfileSchema, profile_to_schema

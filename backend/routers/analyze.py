@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import json
 import os
 
 from typing import Optional
@@ -12,7 +11,7 @@ from fastapi.responses import StreamingResponse
 
 from rate_limit import limiter
 from models.schemas import analysis_to_schema
-from services.claude_client import stream_analysis, AnalysisResult, _sse
+from services.claude_client import stream_analysis, _sse
 from services.session_store import get_session
 
 router = APIRouter()

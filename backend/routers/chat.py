@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import logging
+
 from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import StreamingResponse
 
@@ -9,6 +11,8 @@ from rate_limit import limiter
 from models.schemas import ChatRequest
 from services.claude_client import stream_chat, _sse
 from services.session_store import get_session
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
@@ -72,7 +76,7 @@ def _chat_generator(session_id: str, user_message: str):
 
         gen = stream_chat(
             profiler=session.profiler,
-            chat_history=session.chat_history,
+            chat_history=session.chat_history[-20:],  # cap at 10 turns to bound token cost
             user_message=user_message,
             analysis_context=analysis_context,
         )
@@ -92,5 +96,6 @@ def _chat_generator(session_id: str, user_message: str):
 
         yield _sse({"type": "done"})
 
-    except Exception as exc:
+    except Exception:
+        logger.exception("Chat request failed")
         yield _sse({"type": "error", "message": "Chat request failed. Please try again."})

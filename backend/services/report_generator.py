@@ -21,7 +21,6 @@ def generate_report(
     the web context — returns the string directly rather than writing to disk.
     """
     timestamp = _format_timestamp()
-    stem = _sanitize_filename(Path(filename).stem)
 
     sections = [
         _render_header(filename, profile, timestamp),

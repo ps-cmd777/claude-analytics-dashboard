@@ -5,7 +5,7 @@ from __future__ import annotations
 import pandas as pd
 import pytest
 
-from services.profiler import DataProfiler, DataProfile
+from services.profiler import DataProfiler
 from services.session_store import (
     create_session,
     delete_session,

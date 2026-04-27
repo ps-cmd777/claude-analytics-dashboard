@@ -13,7 +13,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from main import app
-from services.profiler import DataProfiler, DataProfile, ColumnProfile
+from services.profiler import DataProfiler
 from services.session_store import _sessions, create_session, get_session
 
 

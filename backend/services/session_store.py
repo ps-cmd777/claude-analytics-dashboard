@@ -10,8 +10,7 @@ from typing import TYPE_CHECKING
 import pandas as pd
 
 if TYPE_CHECKING:
-    from services.profiler import DataProfiler, DataProfile
-    from analyzer_types import AnalysisResult
+    pass
 
 # Sessions expire after this many hours
 SESSION_TTL_HOURS = 24
