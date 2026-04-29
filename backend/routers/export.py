@@ -2,26 +2,29 @@
 
 from __future__ import annotations
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import Response
 
+from rate_limit import limiter
+from routers._deps import require_session
 from services.report_generator import generate_report, report_filename
-from services.session_store import get_session
+from services.session_store import Session
 
 router = APIRouter()
 
 
 @router.get("/export/{session_id}")
-async def export_report(session_id: str) -> Response:
+@limiter.limit("30/hour")
+async def export_report(
+    request: Request,
+    session_id: str,
+    session: Session = Depends(require_session),
+) -> Response:
     """Generate and return a Markdown report for the given session.
 
     The report is generated on-the-fly from the stored profile and analysis.
     If analysis has not been run yet, returns a profile-only report.
     """
-    session = get_session(session_id)
-    if session is None:
-        raise HTTPException(status_code=404, detail="Session not found")
-
     if session.analysis is None:
         raise HTTPException(
             status_code=400,
@@ -47,12 +50,13 @@ async def export_report(session_id: str) -> Response:
 
 
 @router.get("/session/{session_id}")
-async def session_info(session_id: str) -> dict:
+@limiter.limit("60/hour")
+async def session_info(
+    request: Request,
+    session_id: str,
+    session: Session = Depends(require_session),
+) -> dict:
     """Return lightweight session metadata for the health-check endpoint."""
-    session = get_session(session_id)
-    if session is None:
-        raise HTTPException(status_code=404, detail="Session not found")
-
     return {
         "session_id": session.session_id,
         "filename": session.filename,

@@ -13,6 +13,7 @@ export async function uploadCSV(file: File): Promise<UploadResponse> {
   const res = await fetch(`${API_BASE}/api/upload`, {
     method: 'POST',
     body: form,
+    credentials: 'include', // server sets HttpOnly session_token cookie
   })
 
   if (!res.ok) {
@@ -86,6 +87,7 @@ export async function fetchAnalysis(
   if (domainHint) url.searchParams.set('domain_hint', domainHint)
   const res = await fetch(url.toString(), {
     headers: { Accept: 'text/event-stream' },
+    credentials: 'include',
     signal,
   })
 
@@ -114,6 +116,7 @@ export async function fetchChat(
       Accept: 'text/event-stream',
     },
     body: JSON.stringify({ message }),
+    credentials: 'include',
     signal,
   })
 
@@ -155,6 +158,7 @@ export async function fetchAggregate(
       limit,
       time_unit: timeUnit ?? null,
     }),
+    credentials: 'include',
   })
   if (!res.ok) throw new Error('Aggregation failed')
   const json = await res.json()
@@ -173,6 +177,7 @@ export async function fetchFilteredProfile(
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ filters }),
+    credentials: 'include',
   })
 
   if (!res.ok) {

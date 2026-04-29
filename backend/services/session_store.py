@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
+import hmac
+import secrets
 import uuid
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Optional
 
 import pandas as pd
 
@@ -26,6 +28,7 @@ class Session:
     """All state associated with one uploaded CSV session."""
 
     session_id: str
+    session_token: str  # secret companion to session_id; never in URLs
     filename: str
     created_at: datetime
     df: pd.DataFrame
@@ -75,12 +78,16 @@ def create_session(
 ) -> Session:
     """Create a new session, store it, and return it.
 
-    Generates a UUID4 as the session key. Also cleans up expired sessions.
+    Generates a UUID4 as the public session_id and a 256-bit URL-safe
+    session_token to be set as an HttpOnly cookie on the upload response.
+    Also cleans up expired sessions.
     """
     _cleanup_expired()
     session_id = str(uuid.uuid4())
+    session_token = secrets.token_urlsafe(32)
     session = Session(
         session_id=session_id,
+        session_token=session_token,
         filename=filename,
         created_at=datetime.now(tz=timezone.utc),
         df=df,
@@ -88,6 +95,23 @@ def create_session(
         profile=profile,
     )
     _sessions[session_id] = session
+    return session
+
+
+def authorize(session_id: str, presented_token: Optional[str]) -> Session:
+    """Return the session iff the presented token matches the stored one.
+
+    Constant-time comparison guards against timing oracles. Returns the
+    Session on success; raises ValueError on any failure mode (missing,
+    expired, mismatch) — callers translate to HTTP 401/404.
+    """
+    session = get_session(session_id)
+    if session is None:
+        raise ValueError("session_not_found")
+    if not presented_token:
+        raise ValueError("missing_token")
+    if not hmac.compare_digest(session.session_token, presented_token):
+        raise ValueError("invalid_token")
     return session
 
 

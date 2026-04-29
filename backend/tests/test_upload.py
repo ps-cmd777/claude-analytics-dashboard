@@ -162,7 +162,7 @@ def test_upload_large_file_returns_413(client, mock_profile_upload):
 
 def test_upload_profile_error_returns_422(client, minimal_csv_bytes):
     """If profiling fails, the endpoint returns HTTP 422."""
-    async def failing_profile(file):
+    async def failing_profile(file, max_bytes):
         raise ValueError("Corrupted CSV")
 
     with patch("routers.upload.profile_upload", failing_profile):

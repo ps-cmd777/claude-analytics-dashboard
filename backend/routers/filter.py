@@ -2,14 +2,15 @@
 
 from __future__ import annotations
 
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, Depends, HTTPException, Request
 from pydantic import BaseModel, Field
 from typing import Dict
 
 from rate_limit import limiter
 from models.schemas import DataProfileSchema, profile_to_schema
+from routers._deps import require_session
 from services.profiler import DataProfiler
-from services.session_store import get_session
+from services.session_store import Session
 
 router = APIRouter()
 
@@ -30,17 +31,16 @@ class FilterRequest(BaseModel):
 @router.post("/filter/{session_id}", response_model=DataProfileSchema)
 @limiter.limit("60/hour")
 async def filter_data(
-    request: Request, session_id: str, body: FilterRequest
+    request: Request,
+    session_id: str,
+    body: FilterRequest,
+    session: Session = Depends(require_session),
 ) -> DataProfileSchema:
     """Apply filters to the session's DataFrame, re-profile, and return the new profile.
 
     Filters are applied as exact match on categorical columns.
     Pass an empty filters dict to get the unfiltered profile.
     """
-    session = get_session(session_id)
-    if session is None:
-        raise HTTPException(status_code=404, detail="Session not found")
-
     df = session.df
 
     # Apply each filter
@@ -48,7 +48,7 @@ async def filter_data(
         if col not in df.columns:
             raise HTTPException(
                 status_code=400,
-                detail=f"Column '{col}' not found in dataset",
+                detail="Invalid filter column",
             )
         df = df[df[col].astype(str) == value]
 

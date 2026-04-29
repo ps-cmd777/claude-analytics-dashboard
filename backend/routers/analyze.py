@@ -6,13 +6,14 @@ import os
 
 from typing import Optional
 
-from fastapi import APIRouter, Query, Request
+from fastapi import APIRouter, Depends, Query, Request
 from fastapi.responses import StreamingResponse
 
-from rate_limit import limiter
+from rate_limit import limiter, session_key
 from models.schemas import analysis_to_schema
+from routers._deps import require_session
 from services.claude_client import stream_analysis, _sse
-from services.session_store import get_session
+from services.session_store import Session
 
 router = APIRouter()
 
@@ -21,10 +22,12 @@ _DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "claude-sonnet-4-6")
 
 @router.get("/analyze/{session_id}")
 @limiter.limit("10/hour")
+@limiter.limit("3/hour", key_func=session_key)
 async def analyze(
     request: Request,
     session_id: str,
     domain_hint: Optional[str] = Query(default=None, max_length=200),
+    session: Session = Depends(require_session),
 ) -> StreamingResponse:
     """Stream Claude's AI analysis of the uploaded dataset as Server-Sent Events.
 
@@ -39,7 +42,7 @@ async def analyze(
       Clears prior analysis and chat history so everything re-runs fresh.
     """
     return StreamingResponse(
-        _analysis_generator(session_id, domain_hint=domain_hint),
+        _analysis_generator(session, domain_hint=domain_hint),
         media_type="text/event-stream",
         headers={
             "Cache-Control": "no-cache",
@@ -49,13 +52,8 @@ async def analyze(
     )
 
 
-def _analysis_generator(session_id: str, domain_hint: str | None = None):
+def _analysis_generator(session: Session, domain_hint: str | None = None):
     """Sync generator wrapping the Claude stream_analysis generator."""
-    session = get_session(session_id)
-    if session is None:
-        yield _sse({"type": "error", "message": "Session not found"})
-        return
-
     # On domain correction, clear stale analysis + chat so nothing is mixed
     if domain_hint:
         session.analysis = None

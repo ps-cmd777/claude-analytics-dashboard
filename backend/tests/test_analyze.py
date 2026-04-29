@@ -56,16 +56,15 @@ def sample_profile() -> DataProfile:
 
 
 @pytest.fixture()
-def session_id(sample_profile, tmp_path) -> str:
-    """Create a session and return its ID."""
+def session(sample_profile, tmp_path):
+    """Create a session and return the Session object (has session_id + session_token)."""
     df = pd.DataFrame({"name": ["Alice", "Bob", "Carol"], "age": [30, 25, 35]})
     csv_path = tmp_path / "test.csv"
     df.to_csv(csv_path, index=False)
     profiler = DataProfiler()
     profiler.load_csv(csv_path)
     profiler.profile()
-    session = create_session("test.csv", df, profiler, sample_profile)
-    return session.session_id
+    return create_session("test.csv", df, profiler, sample_profile)
 
 
 # ---------------------------------------------------------------------------
@@ -104,17 +103,13 @@ def _make_mock_response(content: list, stop_reason: str) -> MagicMock:
 # ---------------------------------------------------------------------------
 
 
-def test_analyze_unknown_session_emits_error(client):
-    """Requesting analysis for a non-existent session emits an error SSE event."""
-    with client.stream("GET", "/api/analyze/nonexistent-session-id") as response:
-        assert response.status_code == 200
-        body = response.read().decode()
-
-    assert '"type": "error"' in body
-    assert "Session not found" in body
+def test_analyze_unknown_session_returns_404(client):
+    """Requesting analysis for a non-existent session returns HTTP 404."""
+    response = client.get("/api/analyze/nonexistent-session-id")
+    assert response.status_code == 404
 
 
-def test_analyze_streams_status_and_done_events(client, session_id):
+def test_analyze_streams_status_and_done_events(client, session):
     """Analysis endpoint emits status events, token events, and a done event."""
     final_text = (
         "## EXECUTIVE_SUMMARY ##\nGreat dataset.\n"
@@ -132,21 +127,19 @@ def test_analyze_streams_status_and_done_events(client, session_id):
 
     mock_client = MagicMock()
     mock_client.messages.create.return_value = mock_response
+    cookies = {"session_token": session.session_token}
 
     with patch("services.claude_client.anthropic.Anthropic", return_value=mock_client):
-        with client.stream("GET", f"/api/analyze/{session_id}") as response:
+        with client.stream("GET", f"/api/analyze/{session.session_id}", cookies=cookies) as response:
             assert response.status_code == 200
             body = response.read().decode()
 
-    # Should have status events
     assert '"type": "status"' in body
-    # Should have token events
     assert '"type": "token"' in body
-    # Should have done event
     assert '"type": "done"' in body
 
 
-def test_analyze_done_event_contains_result(client, session_id):
+def test_analyze_done_event_contains_result(client, session):
     """The done SSE event contains a structured AnalysisResult JSON payload."""
     final_text = (
         "## EXECUTIVE_SUMMARY ##\nThis is a great dataset with 3 rows.\n"
@@ -163,12 +156,12 @@ def test_analyze_done_event_contains_result(client, session_id):
     )
     mock_client = MagicMock()
     mock_client.messages.create.return_value = mock_response
+    cookies = {"session_token": session.session_token}
 
     with patch("services.claude_client.anthropic.Anthropic", return_value=mock_client):
-        with client.stream("GET", f"/api/analyze/{session_id}") as response:
+        with client.stream("GET", f"/api/analyze/{session.session_id}", cookies=cookies) as response:
             body = response.read().decode()
 
-    # Find the done event line
     done_lines = [
         line for line in body.split("\n")
         if line.startswith("data:") and '"type": "done"' in line
@@ -182,7 +175,7 @@ def test_analyze_done_event_contains_result(client, session_id):
     assert "key_findings" in done_payload["result"]
 
 
-def test_analyze_stores_result_in_session(client, session_id):
+def test_analyze_stores_result_in_session(client, session):
     """After analysis, session.analysis is populated in the session store."""
     from services.session_store import get_session
 
@@ -201,18 +194,19 @@ def test_analyze_stores_result_in_session(client, session_id):
     )
     mock_client = MagicMock()
     mock_client.messages.create.return_value = mock_response
+    cookies = {"session_token": session.session_token}
 
     with patch("services.claude_client.anthropic.Anthropic", return_value=mock_client):
-        with client.stream("GET", f"/api/analyze/{session_id}") as response:
-            response.read()  # Exhaust the stream
+        with client.stream("GET", f"/api/analyze/{session.session_id}", cookies=cookies) as response:
+            response.read()
 
-    session = get_session(session_id)
-    assert session is not None
-    assert session.analysis is not None
-    assert "great dataset" in session.analysis.executive_summary.lower()
+    s = get_session(session.session_id)
+    assert s is not None
+    assert s.analysis is not None
+    assert "great dataset" in s.analysis.executive_summary.lower()
 
 
-def test_analyze_with_tool_use_iteration(client, session_id):
+def test_analyze_with_tool_use_iteration(client, session):
     """Analysis handles one tool-use iteration before returning end_turn."""
     tool_response = _make_mock_response(
         content=[_make_tool_use_block("get_correlations", "tool-1", {})],
@@ -233,11 +227,11 @@ def test_analyze_with_tool_use_iteration(client, session_id):
 
     mock_client = MagicMock()
     mock_client.messages.create.side_effect = [tool_response, final_response]
+    cookies = {"session_token": session.session_token}
 
     with patch("services.claude_client.anthropic.Anthropic", return_value=mock_client):
-        with client.stream("GET", f"/api/analyze/{session_id}") as response:
+        with client.stream("GET", f"/api/analyze/{session.session_id}", cookies=cookies) as response:
             body = response.read().decode()
 
-    # Two API calls were made (tool_use + end_turn)
     assert mock_client.messages.create.call_count == 2
     assert '"type": "done"' in body

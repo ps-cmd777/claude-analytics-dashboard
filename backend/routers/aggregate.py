@@ -8,11 +8,12 @@ from __future__ import annotations
 
 from typing import Optional
 
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, Depends, HTTPException, Request
 from pydantic import BaseModel, Field
 
 from rate_limit import limiter
-from services.session_store import get_session
+from routers._deps import require_session
+from services.session_store import Session
 
 router = APIRouter()
 
@@ -27,12 +28,13 @@ class AggregateRequest(BaseModel):
 
 @router.post("/aggregate/{session_id}")
 @limiter.limit("120/hour")
-async def aggregate(request: Request, session_id: str, req: AggregateRequest) -> dict:
+async def aggregate(
+    request: Request,
+    session_id: str,
+    req: AggregateRequest,
+    session: Session = Depends(require_session),
+) -> dict:
     """Return aggregated data for a dynamic chart spec."""
-    session = get_session(session_id)
-    if session is None:
-        raise HTTPException(status_code=404, detail="Session not found")
-
     # Headline question: no group_col → return a single total aggregate value
     if not req.group_col:
         df = session.profiler.df

@@ -14,6 +14,16 @@ from slowapi.middleware import SlowAPIMiddleware
 # Load environment variables before anything else
 load_dotenv()
 
+# Fail fast if required env vars are missing rather than running in a broken
+# state where /analyze and /chat would fail at first use.
+_REQUIRED_ENV = ["ANTHROPIC_API_KEY"]
+_missing = [k for k in _REQUIRED_ENV if not os.getenv(k)]
+if _missing:
+    raise RuntimeError(
+        f"Missing required environment variables: {_missing}. "
+        f"Copy backend/.env.example to backend/.env and fill them in."
+    )
+
 from routers import upload, analyze, chat, export, filter, aggregate  # noqa: E402
 
 # ---------------------------------------------------------------------------
@@ -46,7 +56,7 @@ _allowed_origins = [o.strip() for o in _raw_origins.split(",")]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_allowed_origins,
-    allow_credentials=False,
+    allow_credentials=True,  # cookie-based session auth needs this
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["Content-Type", "Accept"],
 )

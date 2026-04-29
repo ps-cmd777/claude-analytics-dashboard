@@ -4,13 +4,14 @@ from __future__ import annotations
 
 import logging
 
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, Depends, Request
 from fastapi.responses import StreamingResponse
 
 from rate_limit import limiter
 from models.schemas import ChatRequest
+from routers._deps import require_session
 from services.claude_client import stream_chat, _sse
-from services.session_store import get_session
+from services.session_store import Session
 
 logger = logging.getLogger(__name__)
 
@@ -19,7 +20,12 @@ router = APIRouter()
 
 @router.post("/chat/{session_id}")
 @limiter.limit("30/hour")
-async def chat(request: Request, session_id: str, body: ChatRequest) -> StreamingResponse:
+async def chat(
+    request: Request,
+    session_id: str,
+    body: ChatRequest,
+    session: Session = Depends(require_session),
+) -> StreamingResponse:
     """Stream Claude's reply to a follow-up question about the uploaded data.
 
     SSE event types:
@@ -27,12 +33,8 @@ async def chat(request: Request, session_id: str, body: ChatRequest) -> Streamin
     - done: stream complete
     - error: something went wrong
     """
-    session = get_session(session_id)
-    if session is None:
-        raise HTTPException(status_code=404, detail="Session not found")
-
     return StreamingResponse(
-        _chat_generator(session_id, body.message),
+        _chat_generator(session, body.message),
         media_type="text/event-stream",
         headers={
             "Cache-Control": "no-cache",
@@ -42,13 +44,8 @@ async def chat(request: Request, session_id: str, body: ChatRequest) -> Streamin
     )
 
 
-def _chat_generator(session_id: str, user_message: str):
+def _chat_generator(session: Session, user_message: str):
     """Sync generator that streams the chat reply and persists history."""
-    session = get_session(session_id)
-    if session is None:
-        yield _sse({"type": "error", "message": "Session not found"})
-        return
-
     try:
         analysis_context = None
         if session.analysis is not None:

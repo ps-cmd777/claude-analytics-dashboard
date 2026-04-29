@@ -8,6 +8,7 @@ This module provides:
 
 from __future__ import annotations
 
+import os
 import tempfile
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -15,10 +16,14 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
-from fastapi import UploadFile
+from fastapi import HTTPException, UploadFile
 
 from .semantic_types import SemanticRole
 from .semantic_classifier import classify_column, detect_derived_columns, detect_measure_pairs
+
+# Hard caps for CSV parsing to prevent memory-exhaustion DoS.
+_MAX_CSV_ROWS = 5_000_000
+_MAX_CSV_COLS = 500
 
 
 # ---------------------------------------------------------------------------
@@ -94,9 +99,23 @@ class DataProfiler:
     def load_csv(self, path: Path) -> pd.DataFrame:
         """Load a CSV file into a DataFrame, attempting date column parsing.
 
+        Bounded by _MAX_CSV_ROWS and _MAX_CSV_COLS to prevent memory-exhaustion
+        DoS from pathological CSV inputs.
+
         Returns the loaded DataFrame and stores it internally.
         """
-        df = pd.read_csv(path, low_memory=False)
+        df = pd.read_csv(
+            path,
+            low_memory=False,
+            encoding="utf-8",
+            encoding_errors="replace",
+            nrows=_MAX_CSV_ROWS,
+        )
+        if df.shape[1] > _MAX_CSV_COLS:
+            raise HTTPException(
+                status_code=413,
+                detail=f"CSV exceeds {_MAX_CSV_COLS}-column limit",
+            )
         detected_dates = self._detect_date_columns(df)
         for col in detected_dates:
             df[col] = pd.to_datetime(df[col], errors="coerce")
@@ -499,16 +518,39 @@ class DataProfiler:
 # ---------------------------------------------------------------------------
 
 
-async def profile_upload(upload_file: UploadFile) -> tuple[DataProfiler, DataProfile, pd.DataFrame]:
-    """Read an UploadFile, write to a temp file, profile it, and return results.
+async def profile_upload(
+    upload_file: UploadFile,
+    max_bytes: int,
+) -> tuple[DataProfiler, DataProfile, pd.DataFrame]:
+    """Read an UploadFile in bounded chunks, profile it, and return results.
 
-    Returns (profiler, profile, dataframe). The profiler instance is retained in
-    the session so that tool handlers remain available during the Claude loop.
+    Streams the upload to a temp file in 1 MiB chunks. Aborts with HTTP 413
+    if the running total exceeds `max_bytes` — preventing OOM DoS from
+    unbounded multipart bodies.
+
+    Returns (profiler, profile, dataframe). The profiler instance is retained
+    in the session so that tool handlers remain available during the Claude
+    loop.
     """
-    contents = await upload_file.read()
+    chunk_size = 1024 * 1024  # 1 MiB
+    total = 0
     with tempfile.NamedTemporaryFile(suffix=".csv", delete=False) as tmp:
-        tmp.write(contents)
         tmp_path = Path(tmp.name)
+        try:
+            while True:
+                chunk = await upload_file.read(chunk_size)
+                if not chunk:
+                    break
+                total += len(chunk)
+                if total > max_bytes:
+                    raise HTTPException(
+                        status_code=413,
+                        detail="File exceeds size limit",
+                    )
+                tmp.write(chunk)
+        except Exception:
+            tmp_path.unlink(missing_ok=True)
+            raise
 
     profiler = DataProfiler()
     try:
